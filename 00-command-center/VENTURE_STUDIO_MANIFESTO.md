@@ -2,7 +2,7 @@
 
 **Version:** 1.0
 **Date:** 2026-07-09
-**Status:** DRAFT — not in effect until Ryan approves
+**Status:** ACTIVE — approved 2026-07-09
 
 ---
 
