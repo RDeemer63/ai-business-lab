@@ -74,6 +74,12 @@ Experiments validate value. Portfolio decisions — standalone product, Tulboxx 
 
 *Source: Experiment 001 design. The Tulboxx integration question was deliberately deferred until after Gate 3. That discipline is now permanent.*
 
+### 13. Build infrastructure only after a workflow has demonstrated repeatable value.
+
+Validated customer demand is necessary but not sufficient. A workflow must be run manually enough times to prove it is repeatable before it earns automation. Automating a workflow that has only run once optimizes something you do not yet understand. Run it manually first. When the manual version is producing consistent results and the bottleneck is clearly the execution speed — not the process design — then build the infrastructure.
+
+*Source: Experiment 001 build session. The Claude-powered webhook server (AI Conversation Engine) was identified as a better architecture than GHL's native AI, but parked until Gate 3 passes and a paying client makes setup speed a real constraint. That decision has been made twice now — once for the webhook server, once for the Prospect Factory. The pattern is permanent.*
+
 ---
 
 ## Current Phase Rules (Phase 1)

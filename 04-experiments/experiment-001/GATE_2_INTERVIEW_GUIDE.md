@@ -115,6 +115,30 @@ After the demo, classify the contractor before moving on:
 
 ---
 
+---
+
+## Feature Capture (fill in after the call)
+
+Convert interview answers into structured data. This feeds directly into the Prospect Recipe. Do not leave these as prose.
+
+| Feature | Value |
+|---------|-------|
+| Lead Source (primary) | |
+| Estimated Monthly Leads | |
+| After-Hours Response | None / Delayed / Covered |
+| CRM | GHL / None / Other: |
+| Owner Handles Sales | Yes / No |
+| Office Staff Count | |
+| Google Reviews Count | |
+| Runs Google Ads | Yes / No / Unknown |
+| Has Contact Form | Yes / No |
+| Current Follow-Up Method | |
+| True Competition (Q7 answer) | |
+| Buying Signal (if any) | |
+| Disqualifier (if any) | |
+
+---
+
 ## Recording Note
 
 If the contractor is comfortable, record the conversation (audio is fine). These recordings become training data for the objection library, sales scripts, and future demos. They are not for marketing.

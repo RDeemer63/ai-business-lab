@@ -67,6 +67,31 @@ Each entry follows this structure:
 - First implementation estimate: ~100-line webhook server, one GHL UI workflow built once, deploy free on Railway/Render or Ryan's Vercel
 - Parked: 2026-07-10
 
+### Capability Decision Matrix (Four-Question Buy/Build Framework)
+- Proposes: a formal decision matrix applied to every capability discussion — four questions: Can we buy 80% today? Does it differentiate the studio? Does it improve every future experiment? Does it become organizational knowledge?
+- Problem claimed: buy-vs-build decisions are currently made by feel; the matrix makes them consistent and traceable
+- Evidence needed: at least 3 capability decisions where the matrix would have changed or validated the outcome — only then does a formal document earn its place over the heuristic already in CAPABILITY_LAYER_HEURISTIC.md
+- Parked: 2026-07-10
+
+### Four Compounding Assets Framework (Principles / Workflows / Capabilities / Recipes)
+- Proposes: formally recognizing four classes of organizational asset that compound across experiments — Principles (how we decide), Workflows (how work moves), Capabilities (what we can do), Recipes (how to repeat success)
+- Problem claimed: the studio accumulates assets without a shared vocabulary for what kind of asset each thing is — this creates confusion when deciding what to preserve vs. what to discard
+- Evidence needed: at least one Recipe in the wild (a validated, reusable playbook extracted from a completed experiment) — until then the abstraction is theoretical
+- Parked: 2026-07-10
+
+### Feature Library (Observed / Correlated / Predictive Buying Signals)
+- Proposes: a library where every experiment contributes structured features that predict buying behavior — starting as "observed," graduating to "correlated" when patterns emerge across experiments, and "predictive" when they reliably forecast conversion
+- Problem claimed: interview data is currently captured as prose and lost after each experiment; structured features would make it queryable and compound across experiments
+- Evidence needed: at least 40 structured interviews across 3+ experiments — only then does the pattern analysis become meaningful
+- Note: the Gate 2 interview guide now captures structured features (Feature Capture table) — this is the seed, not the library
+- Parked: 2026-07-10
+
+### Signal-Based Prospect Discovery (Behavioral Signals Over Industry Classification)
+- Proposes: identifying prospects based on observable behavioral signals — hiring office staff, launching Google Ads, adding locations, review velocity increase, website redesign, adding trucks, posting jobs — rather than industry + company size alone
+- Problem claimed: industry classification finds the right category of buyer; behavioral signals find buyers at the right moment — the combination dramatically improves conversion rates
+- Evidence needed: Year 2 capability. First need the Prospect Recipe Library from 5+ completed experiments, then map which signals correlated with conversion. Some free signals (GBP posts, review velocity, Facebook ad activity) can be tested earlier via Clay enrichment.
+- Parked: 2026-07-10
+
 ### Calibration Metric (Studio-Level Confidence Accuracy)
 - Proposes: tracking whether the studio's confidence scores are calibrated — when the studio says 80% confident, how often is it actually right? Produces a calibration curve comparing predicted confidence to actual outcomes.
 - Problem claimed: confidence scores per experiment are useful for learning, but without calibration tracking, there is no way to know whether the studio is systematically overconfident, underconfident, or well-calibrated
