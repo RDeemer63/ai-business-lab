@@ -1,16 +1,18 @@
 # Command Center — NEXT_ACTIONS.md
 
-**Current Mission:** Build a $5k–$10k/month AI-assisted business with under 5 hours/week of human work.
+**Current Mission:** Build an autonomous venture studio that repeatedly discovers, validates, and launches businesses — each one requiring under 5 hours/week of Ryan's time after stabilization.
 
-**Current Phase:** Phase 1 — Design the Company
+**Current Phase:** Phase 1 — Design the Studio
 
 ---
 
 ## This Week's Priority
 
-Ryan reviews the top 5 finalists and selects a launch strategy.
+Approve the Venture Studio Manifesto and run Experiment Zero.
 
-Research is complete. The pipeline has 15 scored ideas. The top 5 are documented with full trade-off analysis. The decision brief is in `01-business-ideas/TOP5_DECISION_BRIEF.md`.
+Research is complete. Two idea tracks are documented. The studio architecture is built. The next step is not choosing a business — it is testing whether the studio can run a validation cycle without Ryan becoming the bottleneck.
+
+See: `04-experiments/EXPERIMENT_ZERO.md`
 
 ---
 
@@ -18,9 +20,31 @@ Research is complete. The pipeline has 15 scored ideas. The top 5 are documented
 
 | # | Decision | Owner | Status |
 |---|----------|-------|--------|
-| 1 | Which launch strategy: A (content/SEO subscription now), B (build lead follow-up first), or C (run sprints to fund and inform first)? | Ryan | OPEN |
-| 2 | After choosing strategy: which contractor problem does Ryan's existing network mention most — getting found, responding to leads, or tracking competitors? | Ryan | OPEN |
-| 3 | Should Finalist 3 (Lead Follow-Up) be built as a bundled add-on or as the standalone first product? | Ryan | OPEN — depends on Decision 1 |
+| 1 | Approve VENTURE_STUDIO_MANIFESTO.md | Ryan | OPEN — required before Experiment Zero starts |
+| 2 | Approve the PR (`feature/import-agent-library`) and merge | Ryan | OPEN |
+| 3 | Confirm: start Experiment Zero against ADA Compliance Monitoring, or substitute a different idea? | Ryan | OPEN — defaults to ADA if no objection |
+
+---
+
+## Three Assumption Tests (replacing "validate 3 businesses")
+
+We are not validating businesses. We are testing three assumptions.
+
+**Assumption 1:** "Businesses with an urgent legal fear will buy a self-serve monitoring product without a sales call."
+- Test vehicle: ADA Compliance Monitoring (Track B)
+- Method: 20 cold emails with free scan results attached
+- Signal: 3+ genuine replies expressing interest
+- Also serves as Experiment Zero — the meta-test of the studio itself
+
+**Assumption 2:** "Contractors will pay for AI to respond to leads they're already losing."
+- Test vehicle: AI Lead Follow-Up Service (Track A)
+- Method: Walk 3 contractors through a live GHL demo, ask for verbal commitment
+- Signal: At least 1 asks "how do I sign up?" before the demo ends
+
+**Assumption 3 (Experiment Zero):** "The studio can run a full validation cycle with under 2 hours of Ryan's time."
+- Test vehicle: The studio's own process, run against Assumption 1
+- KPI: Process quality, not market response
+- See `04-experiments/EXPERIMENT_ZERO.md` for full definition
 
 ---
 
@@ -28,20 +52,19 @@ Research is complete. The pipeline has 15 scored ideas. The top 5 are documented
 
 | Agent | Task | Status |
 |-------|------|--------|
-| Newsletter Editor | Draft Issue 001 — "We Are Building an AI-Run Business From Scratch" | QUEUED |
-| Business Research Agent | Standby — ready to do deep-dive research on whichever finalist Ryan selects | ON HOLD |
-| Chief of Staff | After Ryan chooses a strategy, update this file and assign Phase 2 tasks | WAITING ON RYAN |
-| Business Strategist (library) | Evaluate Strategy A vs. B vs. C — produce one-page argument for each | QUEUED — activate after Ryan's strategy decision |
-| Offer & Lead Gen Strategist (library) | Draft first offer and lead magnet — activate once strategy is confirmed | QUEUED |
-| Pricing Analyst (library) | Analyze $297 vs. $497 vs. $750/month pricing for content subscription | QUEUED |
+| Chief of Staff | Route Experiment Zero steps after Ryan approves Manifesto | WAITING ON RYAN |
+| Business Strategist | Run Steps 1 and 3 of Experiment Zero (scoping + competitor analysis) | QUEUED — starts when Manifesto approved |
+| Trend Researcher | Run Step 2 of Experiment Zero (market research — ADA monitoring) | QUEUED — activate for this workflow only |
+| Newsletter Editor | Draft Issue 001 — "We Are Building an Autonomous Venture Studio" | QUEUED |
+| Historian | Write decision record for venture studio reframe | QUEUED |
 
 ---
 
 ## Needs Ryan
 
-- [ ] Read `01-business-ideas/TOP5_DECISION_BRIEF.md`
-- [ ] Choose a launch strategy (A, B, or C) from the decision brief
-- [ ] Answer: which problem do contractors in your network complain about most?
+- [ ] Read `00-command-center/VENTURE_STUDIO_MANIFESTO.md` — approve or amend before it becomes the constitutional document
+- [ ] Merge PR #1 (`feature/import-agent-library`)
+- [ ] Say "Start Experiment Zero" to begin the first validation cycle
 
 ---
 
@@ -179,3 +202,28 @@ Max possible: 60
 **Needs Ryan:** Merge the PR. Then select the first idea to validate from COMBINED_COMPARISON.md.
 
 **Needs Ryan:** Review `02-agents/active/ACTIVE_ROSTER.md` and confirm the 7 activated agents before merging the PR. No decisions required — just a sanity check.
+
+---
+
+### 2026-07-09 — Chief of Staff (Venture Studio Reframe)
+
+**What I did:** Implemented the strategic reframe from "build one business" to "autonomous venture studio." Created the manifesto, Intelligence Department (Historian, Pattern Analyst, Knowledge Curator), 09-lessons/ directory structure, Experiment Zero, department structure, and reframed the three validation tests as assumption tests.
+
+**What changed:**
+- `00-command-center/VENTURE_STUDIO_MANIFESTO.md` (created — constitutional document, pending Ryan approval)
+- `02-agents/custom/historian.md` (created — records decisions and post-mortems)
+- `02-agents/custom/pattern-analyst.md` (created — monthly pattern identification)
+- `02-agents/custom/knowledge-curator.md` (created — keeps agent definitions current)
+- `02-agents/departments/intelligence/README.md` (created)
+- `02-agents/departments/research/README.md` (created)
+- `02-agents/departments/operations/README.md` (created)
+- `02-agents/departments/sales/README.md` (created)
+- `09-lessons/` (created — 5 subdirectories: decisions, experiments, post-mortems, pattern-reports, prompt-quality)
+- `04-experiments/EXPERIMENT_ZERO.md` (created — meta-experiment testing the studio's own process)
+- `00-command-center/NEXT_ACTIONS.md` (updated — mission reframed, decisions updated, assumption-based test framing)
+
+**What I recommend next:** Ryan reviews and approves VENTURE_STUDIO_MANIFESTO.md. Then merges the PR. Then says "Start Experiment Zero." The studio runs the first full validation cycle autonomously from there.
+
+**Files touched:** All listed above.
+
+**Needs Ryan:** Approve VENTURE_STUDIO_MANIFESTO.md. It is not in effect until Ryan reviews it.
