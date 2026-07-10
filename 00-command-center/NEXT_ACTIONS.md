@@ -148,6 +148,27 @@ Max possible: 60
 
 ---
 
+### 2026-07-09 — Chief of Staff (Clean Slate Research)
+
+**What I did:** Ran a second, fully independent research track with founder-history bias eliminated. Generated 30 business ideas across 10 categories without reference to Ryan's existing companies, industries, audiences, or software. Scored all 30 on 10 business-quality criteria (no founder advantage). Ran a separate Ryan fit analysis on the top 10. Wrote full profiles for all top 10. Created a combined comparison document synthesizing both tracks.
+
+**What changed:**
+- Created `01-business-ideas/CLEAN_SLATE_PIPELINE.md` — all 30 ideas scored; top 10 with full profiles including Ryan fit analysis; ideas 11-30 as a ranked scored table.
+- Created `01-business-ideas/CLEAN_SLATE_TOP5.md` — readable brief on the top 5 clean-slate finalists, formatted identically to the Track A brief.
+- Created `01-business-ideas/COMBINED_COMPARISON.md` — cross-track synthesis: normalized scores for both tracks, where they agree and diverge, recommended 3-test validation sequence, and an honest answer to whether the best opportunity is inside or outside Ryan's current expertise.
+
+**What I recommend next:** Ryan reads `COMBINED_COMPARISON.md` before making any decision. It costs nothing to run all three validation tests simultaneously — the combined comparison recommends doing exactly that before choosing a track or strategy.
+
+**Files touched:**
+- `01-business-ideas/CLEAN_SLATE_PIPELINE.md` (created)
+- `01-business-ideas/CLEAN_SLATE_TOP5.md` (created)
+- `01-business-ideas/COMBINED_COMPARISON.md` (created)
+- `00-command-center/NEXT_ACTIONS.md` (updated — this entry)
+
+**Needs Ryan:** Read `COMBINED_COMPARISON.md`. The open decisions above remain unchanged — no decision should be made until Ryan reviews both tracks side by side.
+
+---
+
 ### 2026-07-09 — Chief of Staff (Agent Library Import)
 
 **What I did:** Cloned the msitarzewski/agency-agents repository. Restructured `02-agents/` into four subdirectories (library/, active/, custom/, retired/). Moved our three custom agents to custom/ with git history preserved. Imported all 276 upstream agent files. Created AGENT_INDEX.md covering every agent with relevance ratings. Created SELECTION_GUIDE.md with full lifecycle procedures. Activated 7 library agents for Phase 1. Updated the active roster.
