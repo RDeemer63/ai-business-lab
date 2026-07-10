@@ -16,6 +16,7 @@
 |---------|------|---------|
 | v1 | 2026-07-09 | Initial draft |
 | v2 | 2026-07-09 | Revised per Issue #4: repositioned product language (ADA compliance removed), corrected legal claims in MARKET_RESEARCH.md, removed manual scanning from Ryan's scope (Lead Engineer builds batch scanner before Day 0), added dedicated sending domain requirement, strengthened success signal with full funnel tracking, changed hook to factual version |
+| v3 | 2026-07-09 | Chief Architect Stage Gate: KPI held at under 2 hours — email workflow redesigned so agents prepare all 100 drafts, Ryan spot-checks 5 and approves batch send. "Violation report" changed to "accessibility issue report" throughout. |
 
 ---
 
@@ -108,12 +109,12 @@ Filter criteria:
 
 | Day | Action | Who |
 |-----|--------|-----|
-| Day 0 (pre-test) | Ryan approves this plan. All pre-test checklist items complete. | Ryan + Lead Engineer |
-| Day 1 | Send first 50 emails with hosted report links. | Ryan |
-| Day 2 | Send remaining 50 emails. Begin monitoring replies. | Ryan |
-| Day 3-4 | Reply to any responses. Log interest classification. | Ryan |
-| Day 5 | Send one follow-up to non-responders (Day 1 batch). | Ryan |
-| Day 6 | Send one follow-up to non-responders (Day 2 batch). | Ryan |
+| Day 0 (pre-test) | Ryan approves this plan. All pre-test checklist items complete. Agents deliver 100 prepared email drafts for Ryan's review. | Ryan + Lead Engineer + Agents |
+| Day 0 | Ryan spot-checks 5 email drafts. Approves batch. Batch send triggered from dedicated mailbox. | Ryan |
+| Day 1-2 | Monitor inbox for replies. Log any responses as they arrive. | Ryan |
+| Day 3-4 | Reply to any responses. Classify interest level. | Ryan |
+| Day 5 | Agents prepare follow-up drafts for non-responders. Ryan approves and triggers batch follow-up. | Ryan + Agents |
+| Day 6 | Agents prepare follow-up drafts for Day 2 batch. Ryan approves and triggers. | Ryan + Agents |
 | Day 7 | Count and classify all responses. | Ryan |
 | Day 7 (evening) | Report results to Chief of Staff. Step 8 begins. | Ryan |
 
@@ -167,25 +168,25 @@ If open tracking is unavailable, channel vs. message failure is harder to distin
 
 ## Ryan's Role and Time Budget
 
-Ryan's time recalculated with manual scanning removed from his scope.
+Ryan's time recalculated with manual scanning and email drafting both off his plate.
 
 | Task | Estimated time |
 |------|---------------|
 | Review this plan (Step 5) | 15 minutes |
 | Review sample scan report format | 10 minutes |
-| Review and approve prospect list | 20 minutes |
-| Review and approve cold email (Step 6) | 15 minutes |
-| Send 50 emails Day 1 (copy, paste, send from prepared drafts) | 30-45 minutes |
-| Send 50 emails Day 2 | 30-45 minutes |
-| Monitor and log replies Days 3-6 | 10-15 minutes total |
+| Review and approve prospect list | 15 minutes |
+| Review and approve cold email template (Step 6) | 15 minutes |
+| Spot-check 5 prepared email drafts, approve batch send | 10 minutes |
+| Monitor inbox and log replies Days 1-4 | 10 minutes total |
+| Approve follow-up batch (Days 5-6) | 5 minutes |
 | Report results to Chief of Staff Day 7 | 10 minutes |
 | Review go/no-go recommendation (Step 8) | 15 minutes |
 
-**Total estimated Ryan time: 2 hours 10 minutes maximum**
+**Total estimated Ryan time: 1 hour 45 minutes maximum**
 
-The scanner builds reports in batch before sending. Ryan copies prepared email drafts and sends from the dedicated mailbox. No manual scanning, no report generation, no tooling setup on Ryan's end.
+Agents prepare all 100 personalized email drafts before Day 0. Each draft is pre-filled with the prospect's domain, issue count, and three specific accessibility issues from the batch scan. Ryan spot-checks 5, approves the batch, and the send is triggered. Ryan does not copy, paste, or manually send 100 individual emails.
 
-The dedicated sending domain setup and scanner build are Lead Engineer tasks and do not count against Ryan's budget.
+The dedicated sending domain setup, scanner build, and draft preparation are Lead Engineer and agent tasks. They do not count against Ryan's budget.
 
 ---
 

@@ -30,8 +30,8 @@ Note: Previous name was "ClearPath ADA Monitor." Renamed to remove the implicati
 
 **Every month:**
 - Automated WCAG 2.1 AA scan of their website
-- Plain-English violation report showing: issue type, which page, severity (Critical / Serious / Moderate), and a plain-English description of what to fix
-- Accessibility score: Low / Medium / High / Critical based on violation severity and count
+- Plain-English accessibility issue report showing: issue type, which page, severity (Critical / Serious / Moderate), and a plain-English description of what to fix
+- Accessibility score: Low / Medium / High / Critical based on issue severity and count
 - Month-over-month comparison: Did anything get worse? Did fixes stick?
 
 **On signup:**
