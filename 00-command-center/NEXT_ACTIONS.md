@@ -8,11 +8,19 @@
 
 ## This Week's Priority
 
-Experiment Zero is complete. The studio's planning cycle is validated.
+Experiment 001 (AI Lead Follow-Up Service) is IN PROGRESS. Gate 1 passed 2026-07-10.
 
-Next: Select the first real business idea to validate. The pipeline is in `01-business-ideas/COMBINED_COMPARISON.md`. The studio's investment criteria are in `00-command-center/FOUNDER/INVESTMENT_CRITERIA.md`.
+**Ryan's next move:** Run 3 contractor demos (Gate 2). Screen-share the Mike Thompson conversation in GHL (AI Business Lab Demo Account). Use the interview guide. Record verbatim answers. Gate 2 pass = 2 of 3 strong interest.
 
-Ryan selects the idea. The studio runs the cycle.
+Everything else is parked until Gate 2 results come back.
+
+**Gate 2 checklist:**
+- [ ] Identify 3 contractors (warm network — Throttled Up clients or known contacts)
+- [ ] Run demo 1 — fill in GATE_2_INTERVIEW_GUIDE.md copy
+- [ ] Run demo 2
+- [ ] Run demo 3
+- [ ] Bring verbatim answers back to Lead Engineer
+- [ ] Start A2P brand registration in GHL (parallel action)
 
 ---
 
@@ -458,3 +466,40 @@ Max possible: 60
 - [ ] Run demos (screen-share Mike Thompson conversation in GHL)
 - [ ] Record verbatim answers to "If you didn't buy this, what would be missing?"
 - [ ] Start A2P brand registration in GHL (parallel action — needed before live SMS at Gate 3+)
+
+---
+
+### 2026-07-10 — Chief of Staff + Lead Engineer (Architectural Discussion Session)
+
+**Claimed:** No build work. Architectural discussion with Ryan and ChatGPT (Chief Architect) on Phase 2 direction — throughput, prospect generation, and capability classification.
+
+**Definition of Done:** All decisions that earned permanence are committed. All good ideas that didn't earn permanence yet are parked with enough context to retrieve later.
+
+**What I did:**
+- Discussed Phase 2 framing: throughput over governance, factories over agents
+- Resolved the Prospect Factory discussion: three layers (knowledge/workflow/software) prevent conflating orchestration with code — Prospect Factory is a workflow using Clay, not a software build
+- Applied Capability Layer Heuristic: Prospect Recipe = knowledge (write it now), Prospect Factory = workflow (document when Gate 3 passes), Prospect Intelligence Engine = software (build only if workflow proves valuable)
+- Committed Principle 13: "Build infrastructure only after a workflow has demonstrated repeatable value." Sourced from Experiment 001 — decision made twice (webhook server, Prospect Factory)
+- Created CAPABILITY_LAYER_HEURISTIC.md in CHIEF_ARCHITECT/ — three-question filter + Commodity/Build matrix
+- Updated Gate 2 interview guide: added Q7 (true competition), Q8 (post-demo founder note), and Feature Capture structured data table (13 fields that feed the Prospect Recipe)
+- Updated CHATGPT_RECAP to use formal Chief Architect Briefing format; created BRIEFING_TEMPLATE.md
+- Applied Chief Architect rulings: AI Conversation Engine reframed as portable capability, Calibration metric parked, Architectural Risk field added to briefing template
+- Parked 7 new items: Capability Decision Matrix, Four Compounding Assets, Feature Library, Signal-Based Prospecting, Calibration Metric, Two-Speed Studio (earlier), Principle Registry (earlier)
+
+**What I did NOT do and why:** Did not build the Prospect Factory workflow — Gate 3 hasn't passed. Did not create directories for every framework discussed — ChatGPT's own warning: don't name things before they earn permanence. Did not add studio-level confidence tracking — Calibration metric needs 5+ completed experiments.
+
+**Files touched:**
+- `00-command-center/OPERATING_PRINCIPLES.md` (updated — Principle 13 added, v1.1 → v1.2)
+- `00-command-center/CHIEF_ARCHITECT/CAPABILITY_LAYER_HEURISTIC.md` (created)
+- `00-command-center/CHIEF_ARCHITECT/BRIEFING_TEMPLATE.md` (updated — Architectural Risk field, reading times)
+- `00-command-center/PARKING_LOT.md` (updated — 4 new entries)
+- `04-experiments/experiment-001/GATE_2_INTERVIEW_GUIDE.md` (updated — Q7, Q8, Feature Capture table)
+- `04-experiments/EXPERIMENT_001.md` (updated — Gate 1 confidence entry expanded)
+- `00-command-center/CHATGPT_RECAP_2026-07-10.md` (rewritten in briefing format)
+- `00-command-center/NEXT_ACTIONS.md` (this entry)
+
+**Stop condition (if any):** None — session complete. Waiting for Ryan to run Gate 2 demos.
+
+**Needs Ryan:**
+- [ ] Run Gate 2 demos (see This Week's Priority above)
+- [ ] Start A2P registration in GHL (parallel — does not block Gate 2)

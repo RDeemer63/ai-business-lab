@@ -1,20 +1,18 @@
-# Chief Architect Briefing — 2026-07-10
+# Chief Architect Briefing — 2026-07-10 (End of Session)
 
 ---
 
 ## Current State
 
-Experiment 001 (AI Lead Follow-Up Service) is in progress. Gate 1 passed today. The demo is live in a dedicated GHL sandbox sub-account — a full 7-message SMS qualification conversation for an HVAC contractor lead. Ryan's credibility review: "Pretty good." Confidence: 60% → 75%.
+Experiment 001 (AI Lead Follow-Up Service) is IN PROGRESS. Gate 1 passed. Gate 2 is next and is entirely Ryan's execution — 3 contractor demos, screen-share the GHL conversation, 8 interview questions, structured feature capture.
 
-Gate 2 is next. Ryan runs 3 live contractor demos (screen-share), observes reactions, records verbatim answers. No engineering needed until Gate 2 results come back.
+No engineering work is pending until Gate 2 results arrive. The studio is in a holding pattern waiting for market evidence.
 
 ---
 
 ## Decisions Required
 
-1. **Gate 2 interview guide** — built this session (6 capture points per demo). Does the format need any changes before Ryan uses it?
-2. **Demo recording** — recommend Ryan record audio of Gate 2 demos for the Pattern Analyst. Should recording consent be a hard requirement or optional?
-3. **A2P registration timing** — start now in parallel with Gate 2, or wait for Gate 3 confirmation first?
+None currently open. All rulings from today's session were applied. Next decisions will emerge from Gate 2 results.
 
 ---
 
@@ -22,34 +20,38 @@ Gate 2 is next. Ryan runs 3 live contractor demos (screen-share), observes react
 
 | Item | What it showed | File |
 |------|---------------|------|
-| GHL API investigation | Conversations AI config is UI-only — no public API for bot setup | `GATE_1_RESULT.md` |
-| Gate 1 demo build | 7-message HVAC qualification conversation built and approved by Ryan | `DEMO_BUILD.md` |
-| Technical assumption invalidated | Original plan was GHL native AI. Experiment found a better architecture: Claude webhook layer. Hypothesis unchanged. | `PARKING_LOT.md` |
-| Constitutional rule | OPERATING_PRINCIPLES.md v1.1 — no principle without traceable evidence | `OPERATING_PRINCIPLES.md` |
-| Confidence tracking formalized | Gate 1 entry now includes Before / After / Why it changed / Evidence | `EXPERIMENT_001.md` |
+| Gate 1 PASS | Demo built in GHL, Ryan credibility review passed. Confidence 60% → 75%. | `GATE_1_RESULT.md` |
+| GHL AI API is UI-only | No public API for Conversations AI config. Technical assumption invalidated, hypothesis intact. | `DEMO_BUILD.md` |
+| Prospect Factory discussion | Three-layer model (knowledge/workflow/software) resolves the build-vs-buy question. Factory is orchestration, not code. | `CAPABILITY_LAYER_HEURISTIC.md` |
+| Principle 13 | "Build infrastructure only after a workflow has demonstrated repeatable value." | `OPERATING_PRINCIPLES.md` |
+| Gate 2 guide updated | Q7 (true competition), Q8 (founder note), Feature Capture table added. | `GATE_2_INTERVIEW_GUIDE.md` |
+| 7 new parking lot entries | Capability Decision Matrix, Four Compounding Assets, Feature Library, Signal-Based Prospecting, Calibration Metric + 2 earlier | `PARKING_LOT.md` |
+
+## Architectural Risk
+
+Current implementation (Wizard-of-Oz GHL conversation) introduces temporary coupling between the demo and GHL's UI-only AI configuration. Acceptable until Gate 3 — at that point the AI Conversation Engine (webhook architecture) replaces the manual setup and the coupling is resolved. If Gate 3 passes and we skip building the Engine, the per-client setup cost becomes a scaling constraint.
 
 ---
 
 ## Questions for Chief Architect
 
-1. The Claude webhook architecture is parked as "AI Conversation Engine" capability. Correct framing? Should the parking lot entry reference Tulboxx portability more explicitly given that's a primary reason to build it properly?
-
-2. Gate 2 is designed as observation, not selling. The interview guide has 6 capture points and a verbatim question that cannot be paraphrased. Is there anything the guide misses that you'd want captured from contractor conversations at this stage?
-
-3. Confidence tracking is now logged per gate with Before / After / Why / Evidence. Over time this builds a learning history. Do you want us to also track confidence at the studio level — not just per experiment — as a separate metric?
+None open. If you have reactions to what was built or parked today, the next session is the right place to raise them.
 
 ---
 
 ## Recommended Reading Order
 
-1. `04-experiments/experiment-001/GATE_1_RESULT.md` — what passed and why, A2P constraint, Gate 2 authorization
-2. `04-experiments/experiment-001/GATE_2_INTERVIEW_GUIDE.md` — the 6-point observation framework for contractor demos
-3. `00-command-center/PARKING_LOT.md` — AI Conversation Engine entry (renamed and expanded from Claude webhook layer)
+If you want to orient before the next session:
+
+1. `04-experiments/experiment-001/GATE_2_INTERVIEW_GUIDE.md` (5 min) — what Ryan is doing in Gate 2 demos, including the Feature Capture table that seeds the Prospect Recipe
+2. `00-command-center/CHIEF_ARCHITECT/CAPABILITY_LAYER_HEURISTIC.md` (4 min) — the three-question filter and Commodity/Build matrix, sourced from today's Prospect Factory discussion
+3. `00-command-center/OPERATING_PRINCIPLES.md` (2 min) — Principles 12 and 13 are the two newest additions
+4. `00-command-center/PARKING_LOT.md` (3 min) — 7 parked items including AI Conversation Engine, Four Compounding Assets, Feature Library
 
 ---
 
-## Expected Output
+## Expected Output (Next Session)
 
-- Confirmation or revision of the Gate 2 interview guide before Ryan runs demos
-- Ruling on A2P registration timing
-- Any architectural input on the AI Conversation Engine capability framing before it graduates from the parking lot post-Gate-3
+Gate 2 results from Ryan. Lead Engineer logs GATE_2_LOG.md with verbatim contractor answers, Feature Capture data, and classification per contractor. Chief Architect reviews and issues Gate 3 authorization (or inconclusive / fail ruling).
+
+If Gate 3 is authorized: Lead Engineer begins Prospect Recipe from Gate 2 data, documents Prospect Factory workflow using Clay, and builds the AI Conversation Engine (webhook server + GHL workflow).
