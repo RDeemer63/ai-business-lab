@@ -23,6 +23,7 @@ Track A used 10 criteria including founder advantage (C8), which inflates scores
 - **Strategic leverage (1-5):** Does success here make the studio stronger — improving other ventures, building platform capabilities, or expanding distribution? (5 = platform capability; 1 = standalone only)
 - **Reusable capability (1-5):** Will this experiment produce workflows, agents, or technology useful in future experiments? (5 = high reuse; 1 = one-off)
 - **Portfolio synergy (1-5):** Does this strengthen existing Ryan ventures (Tulboxx, Throttled Up, Outta the Weeds) or stand entirely alone? (5 = direct synergy; 1 = no connection)
+- **Knowledge yield (1-5):** Regardless of success or failure, how much does this experiment teach the studio? (5 = failure is as valuable as success; 1 = result teaches nothing reusable)
 
 These three metrics answer a different question than revenue potential. They measure what the Venture Studio learns and retains — independent of whether the business succeeds.
 
