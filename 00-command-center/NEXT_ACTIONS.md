@@ -31,6 +31,9 @@ Research is complete. The pipeline has 15 scored ideas. The top 5 are documented
 | Newsletter Editor | Draft Issue 001 — "We Are Building an AI-Run Business From Scratch" | QUEUED |
 | Business Research Agent | Standby — ready to do deep-dive research on whichever finalist Ryan selects | ON HOLD |
 | Chief of Staff | After Ryan chooses a strategy, update this file and assign Phase 2 tasks | WAITING ON RYAN |
+| Business Strategist (library) | Evaluate Strategy A vs. B vs. C — produce one-page argument for each | QUEUED — activate after Ryan's strategy decision |
+| Offer & Lead Gen Strategist (library) | Draft first offer and lead magnet — activate once strategy is confirmed | QUEUED |
+| Pricing Analyst (library) | Analyze $297 vs. $497 vs. $750/month pricing for content subscription | QUEUED |
 
 ---
 
@@ -119,3 +122,36 @@ Max possible: 60
 - `00-command-center/NEXT_ACTIONS.md` (updated)
 
 **Needs Ryan:** Choose launch strategy A, B, or C from the decision brief.
+
+---
+
+### 2026-07-09 — Chief of Staff (Agent Library Import)
+
+**What I did:** Cloned the msitarzewski/agency-agents repository. Restructured `02-agents/` into four subdirectories (library/, active/, custom/, retired/). Moved our three custom agents to custom/ with git history preserved. Imported all 276 upstream agent files. Created AGENT_INDEX.md covering every agent with relevance ratings. Created SELECTION_GUIDE.md with full lifecycle procedures. Activated 7 library agents for Phase 1. Updated the active roster.
+
+**What changed:**
+- `02-agents/` restructured — four subdirectories created: library/, active/, custom/, retired/
+- `02-agents/custom/` — chief-of-staff.md, business-research.md, newsletter-editor.md moved here (git history preserved)
+- `02-agents/library/agency-agents/` — 276 files imported from upstream (all directories and files preserved as-is)
+- `02-agents/library/AGENT_INDEX.md` — created; covers all 276 files, grouped by department, rated High/Medium/Low for AI Business Lab relevance, overlap flags documented
+- `02-agents/library/SELECTION_GUIDE.md` — created; full search, evaluate, customize, activate, and retire procedures; activation limit set at 15
+- `02-agents/active/ACTIVE_ROSTER.md` — created; 10 active agents listed (3 custom + 7 library); activation queue for Phase 2 included
+- `02-agents/active/` — 7 library agents copied here: business-strategist, offer-lead-gen-strategist, trend-researcher, outbound-strategist, pricing-analyst, proposal-strategist, customer-success-manager
+- `vendor-licenses/agency-agents-LICENSE` — MIT license from upstream preserved verbatim
+- `00-command-center/NEXT_ACTIONS.md` — Agent Queue updated with 3 library agent tasks queued
+
+**What I recommend next:** Ryan reads ACTIVE_ROSTER.md (under 2 pages) to confirm the 7 activated agents make sense before merging the PR. Once the PR is merged, the first tasks to assign are: Pricing Analyst on the $297/$497/$750 analysis, and Business Strategist on the A/B/C strategy evaluation — both can run in parallel while Ryan makes the strategy decision.
+
+**Files touched:**
+- `02-agents/custom/chief-of-staff.md` (moved)
+- `02-agents/custom/business-research.md` (moved)
+- `02-agents/custom/newsletter-editor.md` (moved)
+- `02-agents/library/agency-agents/` (276 files created)
+- `02-agents/library/AGENT_INDEX.md` (created)
+- `02-agents/library/SELECTION_GUIDE.md` (created)
+- `02-agents/active/ACTIVE_ROSTER.md` (created)
+- `02-agents/active/` (7 agent files added)
+- `vendor-licenses/agency-agents-LICENSE` (created)
+- `00-command-center/NEXT_ACTIONS.md` (updated)
+
+**Needs Ryan:** Review `02-agents/active/ACTIVE_ROSTER.md` and confirm the 7 activated agents before merging the PR. No decisions required — just a sanity check.
