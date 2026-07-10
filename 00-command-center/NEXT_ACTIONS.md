@@ -417,3 +417,44 @@ Max possible: 60
 
 **Needs Ryan:**
 - [ ] Say "approved" (or equivalent) to launch Experiment 001, Gate 1. The demo build starts immediately.
+
+---
+
+### 2026-07-10 — Lead Engineer (Experiment 001 Gate 1 Build)
+
+**Claimed:** Build Gate 1 demo — a GHL AI conversation flow Ryan can walk through as a lead contacting a contractor.
+
+**Definition of Done:** Ryan walks through a live demo and passes the credibility test: "Would I show this to a real contractor client without embarrassment?"
+
+**What I did:**
+- Created "AI Business Lab — Demo Account" GHL sub-account via agency API (`ALg2PWHg53TGuMy4rlPQ`)
+- Created location-level PIT token (stored in `.env`, gitignored)
+- Created Lead Recovery Pipeline (6 stages: New Lead → Contacted → Qualified → Booked → Won → Lost)
+- Created Contractor Consultation calendar
+- Created demo contact "Mike Thompson" (simulated HVAC homeowner lead)
+- Built full 7-message SMS qualification conversation via conversations API — inbound lead, AI acknowledges, qualifies service type and urgency, confirms coverage area, gets buy-in, drops booking link
+- Created pipeline opportunity — Mike at "Booked" stage
+- Investigated GHL Conversations AI API access — confirmed UI-only, no public API for bot configuration
+- Activated GHL AI Agents trial (30 days free — Conversations AI, Voice AI, Reviews AI)
+- Confirmed webhook registration and AI completion endpoints are not exposed via public API
+- Identified and parked Claude-powered webhook architecture as the better long-term path
+
+**What I did NOT do and why:** Did not build live AI-powered responses — GHL Conversations AI config is UI-only. Did not build the Claude webhook server — scope creep for Gate 1 (Wizard-of-Oz is acceptable; parked for post-Gate-3). Did not set up A2P — does not block Gate 2 screen-share demos.
+
+**Files touched:**
+- `04-experiments/experiment-001/DEMO_BUILD.md` (created)
+- `04-experiments/experiment-001/GATE_1_RESULT.md` (created)
+- `04-experiments/experiment-001/RYAN_TIME_LOG.md` (created)
+- `04-experiments/EXPERIMENT_001.md` (updated — status IN PROGRESS)
+- `00-command-center/PARKING_LOT.md` (updated — Claude webhook AI layer added)
+- `.env` (created — GHL credentials, gitignored)
+
+**Stop condition (if any):** None — Gate 1 complete.
+
+**Gate 1 result:** PASS. Ryan: "This is pretty good." Confidence 60% → 75%.
+
+**Needs Ryan:**
+- [ ] Identify 3 contractors for Gate 2 demos
+- [ ] Run demos (screen-share Mike Thompson conversation in GHL)
+- [ ] Record verbatim answers to "If you didn't buy this, what would be missing?"
+- [ ] Start A2P brand registration in GHL (parallel action — needed before live SMS at Gate 3+)
