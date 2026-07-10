@@ -8,7 +8,9 @@
 
 ## This Week's Priority
 
-Choose and validate the first business model.
+Ryan reviews the top 5 finalists and selects a launch strategy.
+
+Research is complete. The pipeline has 15 scored ideas. The top 5 are documented with full trade-off analysis. The decision brief is in `01-business-ideas/TOP5_DECISION_BRIEF.md`.
 
 ---
 
@@ -16,9 +18,9 @@ Choose and validate the first business model.
 
 | # | Decision | Owner | Status |
 |---|----------|-------|--------|
-| 1 | Which business model are we testing first? | Ryan | OPEN |
-| 2 | What is the first offer? | Ryan | OPEN |
-| 3 | Who is the first customer segment? | Ryan | OPEN |
+| 1 | Which launch strategy: A (content/SEO subscription now), B (build lead follow-up first), or C (run sprints to fund and inform first)? | Ryan | OPEN |
+| 2 | After choosing strategy: which contractor problem does Ryan's existing network mention most — getting found, responding to leads, or tracking competitors? | Ryan | OPEN |
+| 3 | Should Finalist 3 (Lead Follow-Up) be built as a bundled add-on or as the standalone first product? | Ryan | OPEN — depends on Decision 1 |
 
 ---
 
@@ -26,35 +28,61 @@ Choose and validate the first business model.
 
 | Agent | Task | Status |
 |-------|------|--------|
-| Business Research Agent | Score 10 business ideas using the scoring framework | QUEUED |
-| Chief of Staff | Set up scoring framework doc | QUEUED |
-| Newsletter Editor Agent | Draft Issue 001 — "We're Building a Business With AI" | QUEUED |
+| Newsletter Editor | Draft Issue 001 — "We Are Building an AI-Run Business From Scratch" | QUEUED |
+| Business Research Agent | Standby — ready to do deep-dive research on whichever finalist Ryan selects | ON HOLD |
+| Chief of Staff | After Ryan chooses a strategy, update this file and assign Phase 2 tasks | WAITING ON RYAN |
 
 ---
 
 ## Needs Ryan
 
-- [ ] Review scored business ideas (once Research Agent delivers)
-- [ ] Pick final business model
-- [ ] Approve first offer
+- [ ] Read `01-business-ideas/TOP5_DECISION_BRIEF.md`
+- [ ] Choose a launch strategy (A, B, or C) from the decision brief
+- [ ] Answer: which problem do contractors in your network complain about most?
 
 ---
 
-## Scoring Framework (for Business Ideas)
+## Scoring Framework (Updated)
 
-Rate each idea 1–5 on:
+Rate each idea 1–5 on 10 criteria. Four criteria weighted at 1.5x:
 
-1. **Startup cost** (5 = near zero)
-2. **AI automation potential** (5 = almost fully automated)
-3. **Speed to first dollar** (5 = can earn within 2 weeks)
-4. **MRR potential** (5 = $10k+/month ceiling)
-5. **Competition** (5 = low competition)
-6. **Difficulty** (5 = easy to execute)
-7. **Scalability** (5 = scales without Ryan)
+| Criterion | Weight | Description |
+|-----------|--------|-------------|
+| C1 Startup cost | 1x | 5 = near zero |
+| C2 AI automation potential | 1.5x | 5 = almost fully automated |
+| C3 Speed to first dollar | 1.5x | 5 = first sale within 2 weeks |
+| C4 MRR potential | 1x | 5 = $10k+/month ceiling |
+| C5 Competition | 1x | 5 = low competition |
+| C6 Difficulty | 1x | 5 = easy to execute |
+| C7 Scalability | 1x | 5 = scales without Ryan |
+| C8 Founder advantage | 1.5x | 5 = Ryan has unique edge no competitor has |
+| C9 CS burden | 1x | 5 = very low client service burden |
+| C10 Dependence on Ryan | 1.5x | 5 = delivery requires zero Ryan involvement |
 
-**Total possible: 35**
+**Weighted total = (C1+C4+C5+C6+C7+C9) + (C2+C3+C8+C10) × 1.5**
+Max possible: 60
 
-Target: ideas scoring 25+ advance to deeper research.
+---
+
+## Pipeline Summary
+
+| Rank | Idea | Score |
+|------|------|-------|
+| 1 | AI Content Subscription (GBP + Blog + Social) | 51 |
+| 2 | AI Local SEO Subscription (Throttled Up Productized) | 49.5 |
+| 3 | AI Lead Follow-Up Service (GHL-Based) | 47.5 |
+| 4 | AI YouTube Script + Short-Form Video System | 47 |
+| 5 | AI Competitive Intelligence Reports | 45 |
+| 6 | AI Bid/Proposal Optimization (Tulboxx-Adjacent) | 44.5 |
+| 7 | AI Reputation Management Subscription | 44 |
+| 8 | Tulboxx White-Label / Reseller | 44 |
+| 9 | White-Label AI Marketing System for Agencies | 44 |
+| 10 | Trades Newsletter with Paid Tier + Sponsorships | 43 |
+| 11 | Niche Affiliate Media Site | 41 |
+| 12 | Outta the Weeds Digital Course + Paid Community | 40.5 |
+| 13 | OTW Framework Licensing to Business Coaches | 39 |
+| 14 | Done-in-a-Day AI Implementation Sprint | 38.5 |
+| 15 | Trades Business OS — GHL Snapshot + Setup | 37.5 |
 
 ---
 
@@ -71,3 +99,23 @@ Target: ideas scoring 25+ advance to deeper research.
 **Files touched:** All initial files.
 
 **Needs Ryan:** Business model decision (see Open Decisions above).
+
+---
+
+### 2026-07-09 — Chief of Staff
+
+**What I did:** Researched, scored, and documented all 15 business ideas against a 10-criterion weighted scoring framework. Identified the top 5 finalists. Wrote the decision brief comparing finalists and framing the launch strategy choice. Updated the command center to reflect research completion.
+
+**What changed:**
+- Created `01-business-ideas/IDEA_PIPELINE.md` — all 15 ideas scored and sorted highest to lowest. Each includes full scoring table, customer, problem, offer, pricing, revenue math, startup time, human work before and after stabilization, AI agent tasks, largest risk, 7-day validation test, and a skeptic's note.
+- Created `01-business-ideas/TOP5_DECISION_BRIEF.md` — summaries of each finalist, comparison table, core trade-offs, bundle opportunities, and the exact decision Ryan needs to make.
+- Updated `00-command-center/NEXT_ACTIONS.md` — open decisions and agent queue updated to reflect research complete status. Pipeline summary table added.
+
+**What I recommend next:** Ryan reads the decision brief (not the pipeline — the brief). Then answers the three open decisions above. Once a strategy is chosen, Phase 2 begins: build the offer, define the sales process, and close the first client.
+
+**Files touched:**
+- `01-business-ideas/IDEA_PIPELINE.md` (created)
+- `01-business-ideas/TOP5_DECISION_BRIEF.md` (created)
+- `00-command-center/NEXT_ACTIONS.md` (updated)
+
+**Needs Ryan:** Choose launch strategy A, B, or C from the decision brief.
