@@ -85,6 +85,22 @@ Silence is data. Write down what they say and how long they were quiet before sa
 
 ---
 
+### 7. True Competition
+"If this disappeared tomorrow, how would you solve this problem?"
+
+This reveals what you are actually replacing — an employee, sticky notes, memory, spreadsheets, or nothing. That is more valuable product intelligence than any feature comparison.
+
+**Their answer:**
+
+---
+
+### 8. Ryan's Post-Demo Note
+Fill this in immediately after the call, before memory fades.
+
+**What surprised me most:**
+
+---
+
 ## Classification
 
 After the demo, classify the contractor before moving on:

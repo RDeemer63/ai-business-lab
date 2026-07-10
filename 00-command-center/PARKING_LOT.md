@@ -58,13 +58,20 @@ Each entry follows this structure:
 - Evidence needed: two or more simultaneous active ventures where resource conflict is documented — or four completed experiments showing a natural split between ideas that validated quickly and ideas that required sustained build effort
 - Parked: 2026-07-10
 
-### AI Conversation Engine — Capability (Claude-Powered GHL Webhook Architecture)
-- Proposes: a lightweight webhook server that intercepts GHL inbound SMS, calls Claude API with contractor-specific context, and posts the AI reply back via GHL conversations API — replacing GHL's native Conversations AI with a Claude-powered equivalent
-- Problem claimed: GHL's Conversations AI is UI-only (no API config), limiting our ability to set up and customize AI responses programmatically per contractor client
-- Evidence needed: Gate 3 passes and at least one paying contractor client — at that point setup speed matters and the value of API-driven configuration is real
-- Capability name: AI Conversation Engine — lead follow-up is one use case; the engine eventually powers estimate follow-up, review requests, invoice reminders, maintenance reminders, appointment confirmations, customer reactivation. Businesses assemble from capabilities.
-- Why it's better than GHL native: Claude outperforms GHL's LLM, prompts are fully customizable per client, the intelligence layer is owned by us not GHL, and new clients require only a new prompt not a new UI build
-- Build estimate: ~100-line Node.js server, deploy free on Railway/Render, one GHL workflow built once in UI. Ryan has Vercel available.
+### AI Conversation Engine (Capability)
+- Proposes: a reusable capability that generates context-aware, business-rule-driven conversations across any communication channel — designed to be portable across GHL, Tulboxx, future CRMs, email, web chat, voice, and messaging platforms
+- Problem claimed: no programmable AI conversation layer exists in the current stack; GHL's native Conversations AI is UI-only and not configurable via API
+- Use cases this capability powers: lead follow-up, estimate follow-up, review requests, invoice reminders, maintenance reminders, appointment confirmations, customer reactivation — lead follow-up (Experiment 001) is the first use case, not the definition of the capability
+- Portability note: first implementation routes SMS through GHL; the capability is not defined by this implementation and should survive any change in CRM, AI model, or channel — including future portability into Tulboxx
+- Evidence needed: Gate 3 passes and at least one paying contractor client — setup speed and programmability become real constraints at that point
+- First implementation estimate: ~100-line webhook server, one GHL UI workflow built once, deploy free on Railway/Render or Ryan's Vercel
+- Parked: 2026-07-10
+
+### Calibration Metric (Studio-Level Confidence Accuracy)
+- Proposes: tracking whether the studio's confidence scores are calibrated — when the studio says 80% confident, how often is it actually right? Produces a calibration curve comparing predicted confidence to actual outcomes.
+- Problem claimed: confidence scores per experiment are useful for learning, but without calibration tracking, there is no way to know whether the studio is systematically overconfident, underconfident, or well-calibrated
+- Evidence needed: at least 5 completed experiments with recorded confidence scores and actual outcomes — only then can a calibration curve be meaningful
+- Note: per-experiment confidence tracking is the right behavior now; studio-level calibration is the next-order metric that makes confidence meaningful at scale
 - Parked: 2026-07-10
 
 ### Principle Registry (08-governance/PRINCIPLE_REGISTRY.md)

@@ -20,6 +20,12 @@ What changed since the last briefing? Results, findings, surprises. Link to file
 |------|---------------|------|
 | | | |
 
+## Architectural Risk
+
+One paragraph. If there is no current risk: "No architectural concerns." If there is a risk: name it, explain why it's acceptable now, and state when it stops being acceptable.
+
+Example: "Current implementation introduces temporary coupling between GHL and the AI Conversation Engine. Acceptable until Gate 3 — at that point the capability must be extracted into its own service or the coupling becomes a production constraint."
+
 ## Questions for Chief Architect
 
 Numbered. Specific. Each question should have a clear answer type (yes/no, recommendation, architectural judgment).
@@ -30,11 +36,11 @@ Numbered. Specific. Each question should have a clear answer type (yes/no, recom
 
 ## Recommended Reading Order
 
-If the Chief Architect has 10 minutes before responding, what should they read first?
+If the Chief Architect has 10 minutes before responding, what should they read first? Include estimated reading time per file.
 
-1.
-2.
-3.
+1. File name (X min)
+2. File name (X min)
+3. File name (X min)
 
 ## Expected Output
 
