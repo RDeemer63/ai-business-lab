@@ -386,3 +386,34 @@ Max possible: 60
 **Stop condition (if any):** None — full scope completed.
 
 **Needs Ryan:** Select the next idea from `01-business-ideas/COMBINED_COMPARISON.md` to begin Experiment 001.
+
+---
+
+### 2026-07-10 — Lead Engineer + Chief of Staff (Experiment 001 Selection + Constitutional Rule)
+
+**Claimed:** Complete Investment Committee housekeeping (Venture Studio scoring dimensions, experiment identifiers, COMBINED_COMPARISON.md updates), define Experiment 001 with IC conditions applied, add Operating Principle 12, add constitutional rule on evidence-sourced principles, park PRINCIPLE_REGISTRY.md.
+
+**Definition of Done:** COMBINED_COMPARISON.md updated with Venture Studio metrics and Knowledge Yield. EXPERIMENT_001.md written with IC conditions applied (v2). OPERATING_PRINCIPLES.md updated to v1.1 with constitutional rule as preamble. PRINCIPLE_REGISTRY.md added to PARKING_LOT.md. All committed to main via PRs.
+
+**What I did:**
+- Added Strategic Leverage, Reusable Capability, Portfolio Synergy, and Knowledge Yield columns to COMBINED_COMPARISON.md cross-track table; AI Lead Follow-Up now ranks #1
+- Wrote EXPERIMENT_001.md v1; applied all five IC conditions (tightened hypothesis, Gate 1 renamed "Demonstrate the Promise," required interview question added, three-price-point Gate 3, 2.5hr budget exception documented); added Confidence Score per gate and one-question-per-gate rule; wrote v2
+- Added Operating Principle 12: "Do not answer tomorrow's portfolio question with today's experiment." Source: Experiment 001 design
+- Added constitutional rule to OPERATING_PRINCIPLES.md (v1.0 → v1.1): no principle admitted without traceable experiment, decision, or post-mortem source
+- Added PRINCIPLE_REGISTRY.md as parked entry in PARKING_LOT.md; evidence needed before graduating: 10+ principles, 2+ instances where knowing lineage changed a decision
+- All changes merged to main via PRs #9-12
+
+**What I did NOT do and why:** Did not start Gate 1. Experiment 001 is defined but not approved by Ryan in his own words. Ryan relayed ChatGPT's "Launch it" — consistent with the pattern of relaying then confirming. Not starting Gate 1 until Ryan explicitly approves.
+
+**Files touched:**
+- `01-business-ideas/COMBINED_COMPARISON.md` (updated — Venture Studio metrics added, ranking updated)
+- `04-experiments/EXPERIMENT_001.md` (created — v2, IC conditions applied)
+- `00-command-center/OPERATING_PRINCIPLES.md` (updated — v1.1, constitutional rule added, Principle 12 added)
+- `00-command-center/PARKING_LOT.md` (updated — PRINCIPLE_REGISTRY.md and Two-Speed Studio added)
+- `09-lessons/experiment-zero/STAGE_GATE_LESSONS.md` (created)
+- `00-command-center/NEXT_ACTIONS.md` (this entry)
+
+**Stop condition (if any):** Waiting for Ryan to explicitly approve Experiment 001 before Gate 1 begins.
+
+**Needs Ryan:**
+- [ ] Say "approved" (or equivalent) to launch Experiment 001, Gate 1. The demo build starts immediately.
