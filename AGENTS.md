@@ -2,40 +2,71 @@
 
 This file governs how AI agents work in this repository.
 
+For full operating rules, see `00-command-center/OPERATING_PRINCIPLES.md`.
+For the agent metadata database, see `02-agents/AGENT_REGISTRY.md`.
+For the active roster, see `02-agents/active/ACTIVE_ROSTER.md`.
+
 ---
 
 ## Core principles
 
-1. **Leave a trail.** Every agent session must end with an update to `00-command-center/NEXT_ACTIONS.md` documenting what changed, what was decided, and what needs Ryan.
+1. **Leave a trail.** Every agent session must end with an update to `00-command-center/NEXT_ACTIONS.md`.
 2. **Branch discipline.** Work on `agent/sandbox` or `agent/[feature]`. Never push to `main` directly.
-3. **Small PRs.** One concern per pull request. Easier to review, easier to merge.
-4. **Decision records.** Any non-obvious architectural or business decision goes in `08-decisions/` as a dated markdown file.
+3. **Small PRs.** One concern per pull request.
+4. **Decision records.** Non-obvious architectural or business decisions go in `08-decisions/` as dated markdown files.
 5. **No gold-plating.** Build what the current phase needs. Defer everything else.
+6. **Activate workflows, not agents.** Pull agents for a workflow. Return them to dormant when it ends.
+7. **Library agents are never edited.** Customize in `02-agents/custom/` only.
 
 ---
 
-## Agent roster (Phase 1)
+## Current core team (Phase 1)
 
-### Chief of Staff
-**File:** `02-agents/chief-of-staff.md`
-**Scope:** Maintains NEXT_ACTIONS.md, routes tasks to the right specialist, surfaces blockers to Ryan, writes weekly status.
+Three agents are permanently active. All others are dormant until a workflow requires them.
 
-### Business Research Agent
-**File:** `02-agents/business-research.md`
-**Scope:** Scores business ideas, researches markets, analyzes competitors, estimates revenue paths.
+| Agent | File | Role |
+|-------|------|------|
+| Chief of Staff | `02-agents/custom/chief-of-staff.md` | Coordination, routing, command center |
+| Project Manager | `02-agents/custom/project-manager.md` | Task tracking, queue health |
+| Business Strategist | `02-agents/active/business-strategist.md` | Strategy analysis, opportunity evaluation |
 
-### Newsletter Editor Agent
-**File:** `02-agents/newsletter-editor.md`
-**Scope:** Documents the experiment weekly. Drafts newsletter issues. Maintains the public-facing story of this project.
+### Permanent knowledge role
+
+| Agent | File | Role |
+|-------|------|------|
+| Librarian | `02-agents/custom/librarian.md` | Institutional memory — records every experiment and decision |
+
+### Supporting custom agents (always available)
+
+| Agent | File | Role |
+|-------|------|------|
+| Business Research Agent | `02-agents/custom/business-research.md` | Idea scoring, market research |
+| Newsletter Editor | `02-agents/custom/newsletter-editor.md` | Newsletter drafts, project documentation |
+
+---
+
+## Agent directory structure
+
+```
+02-agents/
+  active/        — imported library agents approved for current use
+  custom/        — agents built specifically for AI Business Lab
+  library/       — full upstream library (276 files, read-only)
+    agency-agents/   — msitarzewski/agency-agents (MIT)
+    AGENT_INDEX.md   — full categorized index of library agents
+    SELECTION_GUIDE.md — how to search, evaluate, and activate
+  retired/       — agents removed from service
+  AGENT_REGISTRY.md — queryable metadata for all evaluated agents
+```
 
 ---
 
 ## Trail format
 
-Every agent session must leave a note in `00-command-center/NEXT_ACTIONS.md` using this format:
+Every agent session must leave a note in `00-command-center/NEXT_ACTIONS.md`:
 
 ```
-## [Date] — [Agent Name]
+### [Date] — [Agent Name]
 
 **What I did:**
 **What changed:**
@@ -49,15 +80,15 @@ Every agent session must leave a note in `00-command-center/NEXT_ACTIONS.md` usi
 ## Communication flow
 
 ```
-Ryan creates direction (issue or NEXT_ACTIONS.md update)
+Ryan creates direction (NEXT_ACTIONS.md or issue)
     ↓
-Claude Code drafts / builds / edits files
+Chief of Staff routes to correct agent or workflow
     ↓
-Codex reviews / improves / challenges
+Agent(s) execute, commit outputs
     ↓
-Pull Request opened
+Pull Request opened (for significant changes)
     ↓
-Ryan reviews summary + decisions only
+Ryan reviews Needs Ryan section only
     ↓
 Merge
 ```
@@ -66,9 +97,9 @@ Ryan only touches the **Needs Ryan** section. Everything else runs without him.
 
 ---
 
-## Tools each agent may use
+## Tools agents may use
 
 - Read/write files in this repo
 - Create branches and PRs
-- Update NEXT_ACTIONS.md and the decision log
-- Agents may NOT: send emails, post publicly, or spend money without Ryan's explicit approval
+- Update NEXT_ACTIONS.md and KNOWLEDGE_BASE.md
+- Agents may NOT: send emails, post publicly, or spend money without Ryan's explicit approval in NEXT_ACTIONS.md

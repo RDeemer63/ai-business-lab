@@ -154,4 +154,28 @@ Max possible: 60
 - `vendor-licenses/agency-agents-LICENSE` (created)
 - `00-command-center/NEXT_ACTIONS.md` (updated)
 
+---
+
+### 2026-07-09 — Chief of Staff (Architecture Review)
+
+**What I did:** Implemented pre-merge architectural improvements. Reduced active roster from 7 to 3. Added registry, principles, librarian, knowledge base, and first workflow definitions.
+
+**What changed:**
+- `02-agents/active/ACTIVE_ROSTER.md` — rewritten; 3-agent core team only; 6 agents returned to dormant
+- `02-agents/active/` — 6 agents removed (originals remain in library/): customer-success-manager, offer-lead-gen-strategist, outbound-strategist, pricing-analyst, proposal-strategist, trend-researcher
+- `02-agents/custom/librarian.md` — new permanent knowledge role created
+- `02-agents/custom/project-manager.md` — new core team member created (based on library/project-management/project-manager-senior.md)
+- `02-agents/AGENT_REGISTRY.md` — queryable agent metadata database created (10 agents evaluated)
+- `00-command-center/OPERATING_PRINCIPLES.md` — 11-principle system constitution created
+- `00-command-center/KNOWLEDGE_BASE.md` — institutional memory initialized with 5 entries
+- `03-workflows/README.md` — workflow philosophy and index created
+- `03-workflows/VALIDATE_BUSINESS_IDEA.md` — first defined workflow, ready to run
+- `AGENTS.md` — updated to reflect new philosophy, directory structure, and core team
+
+**What I recommend next:** Ryan merges the PR. The first workflow to run is VALIDATE_BUSINESS_IDEA — trigger it by selecting one idea from COMBINED_COMPARISON.md.
+
+**Files touched:** All files listed above.
+
+**Needs Ryan:** Merge the PR. Then select the first idea to validate from COMBINED_COMPARISON.md.
+
 **Needs Ryan:** Review `02-agents/active/ACTIVE_ROSTER.md` and confirm the 7 activated agents before merging the PR. No decisions required — just a sanity check.
