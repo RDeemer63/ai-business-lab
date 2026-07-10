@@ -1,6 +1,6 @@
 # Experiment 001 — AI-Driven Contractor Lead Recovery
 
-**Status:** DEFINED — pending Ryan approval (v2, Investment Committee conditions applied)
+**Status:** IN PROGRESS — Gate 1 (Ryan approved 2026-07-10)
 **Type:** Business validation (three gates)
 **Date defined:** 2026-07-10
 **Experiment identifier:** 001
