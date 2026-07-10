@@ -321,3 +321,34 @@ Max possible: 60
 - [ ] Read `04-experiments/experiment-zero/VALIDATION_PLAN.md` and approve or amend — this is Step 5. Approval authorizes Step 6 (outreach message design).
 - [ ] Log your time for Step 1 (idea selection) in `04-experiments/experiment-zero/RYAN_TIME_LOG.md`
 - [ ] One pre-test action before Step 6: run one sample scan on any business website using the free axe DevTools Chrome extension or Google Lighthouse, screenshot the results, and confirm the format is usable as a report. This takes 10 minutes and confirms the mechanic works before we design the email around it.
+
+---
+
+### 2026-07-09 — Lead Engineer (Experiment Zero: Step 5 Revision per Issue #4)
+
+**Claimed:** Revise Experiment Zero Step 5 documents per GitHub Issue #4. Six material issues to fix.
+
+**Definition of Done:** VALIDATION_PLAN.md (v2), MARKET_RESEARCH.md (corrected), and OFFER_DESIGN.md (repositioned) all updated. All six issues from Issue #4 addressed. Committed and pushed. Comment posted on Issue #4.
+
+**What I did:**
+- Fix 1: Removed "ADA compliance monitoring" product framing across all three documents. Replaced with "website accessibility monitoring." Added required disclaimer in OFFER_DESIGN.md and VALIDATION_PLAN.md.
+- Fix 2: Corrected three errors in MARKET_RESEARCH.md. Removed Winn-Dixie citation (11th Circuit reversed). Corrected DOJ April 2024 rule scope (Title II only, not private businesses). Added source citations to all statistics and a Sourced Fact Table flagging which claims are approved for marketing copy.
+- Fix 3: Removed manual scanning from Ryan's task list. VALIDATION_PLAN.md now assigns batch scanner build to Lead Engineer as a pre-Day-0 task. Ryan's time recalculated at 2h10m max without scanning.
+- Fix 4: Removed recommendation to use Ryan's primary email account. VALIDATION_PLAN.md now requires a dedicated sending domain, new mailbox, SPF/DKIM/DMARC setup, 7-day warm period, and hosted report links instead of PDF attachments.
+- Fix 5: Replaced binary success/failure with a full funnel table (delivered, opened, replied, genuine interest, calls, trials, concrete commitments). Added strong go signal (1 concrete commitment), moderate go signal (3+ interest, no commitment), and failure classification by type (channel/message/offer).
+- Fix 6: Changed outreach hook from fear-based ("You have violations that could expose you to a lawsuit") to factual version ("We found [N] accessibility issues — free report"). Added rationale explaining why factual version is tested first.
+- Updated offer name: ClearPath ADA Monitor → ClearPath Accessibility Monitor.
+
+**What I did NOT do and why:** Did not build the batch scanner script — that is a separate Lead Engineer task before Day 0, tracked in the pre-test checklist in VALIDATION_PLAN.md. Did not reduce prospect count — 100 is still appropriate; the workload issue was Ryan doing manual scanning, not the total volume. Did not close Issue #4 — Ryan confirms resolution.
+
+**Files touched:**
+- `04-experiments/experiment-zero/MARKET_RESEARCH.md` (corrected — errors fixed, Sourced Fact Table added)
+- `04-experiments/experiment-zero/OFFER_DESIGN.md` (repositioned — product language updated, disclaimer added)
+- `04-experiments/experiment-zero/VALIDATION_PLAN.md` (v2 — all six fixes applied)
+- `00-command-center/NEXT_ACTIONS.md` (this entry)
+
+**Stop condition (if any):** None — full scope completed.
+
+**Needs Ryan:**
+- [ ] Review VALIDATION_PLAN.md v2 on branch `agent/experiment-zero` and approve or request further changes (Step 5 gate)
+- [ ] Confirm Issue #4 is resolved or note remaining concerns

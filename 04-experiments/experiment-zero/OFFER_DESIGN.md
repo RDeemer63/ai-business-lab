@@ -1,52 +1,58 @@
-# Offer Design — ADA Website Compliance Monitoring
+# Offer Design — Website Accessibility Monitoring
 
 **Experiment:** Experiment Zero
 **Step:** 4 (Offer Design)
 **Owner:** Offer and Lead Gen Strategist
 **Date:** 2026-07-09
-**Status:** COMPLETE
+**Status:** COMPLETE — repositioned 2026-07-09 per Issue #4
+
+> **Disclaimer:** Automated testing detects only some accessibility barriers and does not determine legal compliance. This report is not legal advice and does not guarantee protection from claims.
 
 ---
 
 ## The One-Sentence Value Proposition
 
-We scan your website every month for ADA violations, send you a plain-English report showing exactly what is broken and what to fix, so you can reduce your lawsuit exposure without paying a lawyer or hiring a developer just to find out the problem.
+We scan your website every month for accessibility issues, send you a plain-English report showing exactly what is broken and what to fix first, so you know what needs attention without paying a developer or a lawyer to find out.
 
 ---
 
 ## Offer Name
 
-**ClearPath ADA Monitor**
+**ClearPath Accessibility Monitor**
 
-Reasoning: "Clear" signals plain-language reporting (our differentiator). "Path" signals direction and fixability. "ADA Monitor" is descriptive for search and cold outreach. Not a made-up word. Not trademarked by a direct competitor.
+Reasoning: "Clear" signals plain-language reporting (our differentiator). "Path" signals direction and fixability. "Accessibility Monitor" is accurate and descriptive. Not trademarked by a direct competitor.
+
+Note: Previous name was "ClearPath ADA Monitor." Renamed to remove the implication that automated scanning determines ADA compliance or legal standing.
 
 ---
 
 ## What the Customer Gets
 
 **Every month:**
-- Automated WCAG 2.1 AA scan of all pages on their website
-- Plain-English violation report (PDF + web view) showing: violation type, which page, severity (Critical / Serious / Moderate), and a plain-English fix description
-- Risk score: Low / Medium / High / Critical based on violation severity and count
+- Automated WCAG 2.1 AA scan of their website
+- Plain-English violation report showing: issue type, which page, severity (Critical / Serious / Moderate), and a plain-English description of what to fix
+- Accessibility score: Low / Medium / High / Critical based on violation severity and count
 - Month-over-month comparison: Did anything get worse? Did fixes stick?
 
 **On signup:**
-- Initial full-site audit (same format as monthly reports)
-- Baseline risk score with context: "Sites with this profile have a [X]% likelihood of receiving a demand letter based on industry data"
-- Remediation priority list: The three fixes most likely to reduce lawsuit exposure first
+- Initial full-site scan (same format as monthly reports)
+- Remediation priority list: The three issues most likely to create friction for users with disabilities
 
 **What is not included:**
 - We do not fix the site. We tell the client what is broken.
 - We do not provide legal advice.
 - We do not use overlays or widgets.
+- We do not guarantee compliance with any law or regulation.
 
-This is deliberate. Fixing requires a developer. Offering to fix adds variable cost, human time, and legal exposure. Monitoring is a clean recurring product.
+> Automated testing detects only some accessibility barriers and does not determine legal compliance. This report is not legal advice and does not guarantee protection from claims.
+
+This scope is deliberate. Fixing requires a developer. Offering to fix adds variable cost, human time, and liability. Monitoring is a clean recurring product.
 
 ---
 
 ## Pricing
 
-Two tiers. No monthly discounts — annual only for the lower price to improve cash collection.
+Two tiers. Month-to-month or annual.
 
 | Tier | Monthly (month-to-month) | Annual (paid upfront) | Sites covered |
 |------|--------------------------|-----------------------|---------------|
@@ -54,87 +60,58 @@ Two tiers. No monthly discounts — annual only for the lower price to improve c
 | Multi | $179/month | $1,790/year ($149/mo) | Up to 5 sites |
 
 **Pricing rationale:**
-- accessiBe charges $490/year ($41/month) for an overlay with credibility problems
-- Our product is more credible and more useful than an overlay
-- $99/month is $100 more per month than we need to exceed their price — but we are not competing on price
-- $99/month is less than 4 hours of the cheapest attorney's time
-- $990/year is less than 4% of a typical ADA lawsuit settlement
-- The Multi tier creates a clear upgrade path and captures agencies managing client sites
-
-**Free scan hook (acquisition only — not a tier):**
-A free one-time compliance scan with a single-page summary report. This is the cold outreach mechanism. The report shows:
-- Overall risk score
-- Total violation count by severity
-- Three examples of real violations found on their site
-- What those violations could cost them
-
-The free scan is not the product. It is the introduction. It demonstrates the value of the product in 30 seconds.
+- accessiBe charges $490/year ($41/month) for an overlay product
+- Our product is a different category — monitoring, not overlays
+- $99/month is less than one hour of attorney time at most law firms
+- Annual option improves cash collection and rewards commitment
 
 ---
 
 ## Why Someone Chooses This Over accessiBe or UserWay
 
-Specific answer: because accessiBe and UserWay use overlays, and overlays are being sued around.
+Specific answer: because accessiBe and UserWay use overlays, and overlays have a documented credibility problem.
 
-A business owner who has done any research will find the Overlay Fact Sheet, the National Federation of the Blind's statements, or news about other businesses getting sued while using overlays. That research creates doubt about overlays that our product resolves completely — because we do not use overlays.
+The Overlay Fact Sheet (a publicly available document signed by hundreds of accessibility professionals) states that overlays do not solve accessibility problems and may introduce new ones. The National Federation of the Blind has issued critical statements about overlays. Several businesses have been sued while using overlays, because the underlying site content remained inaccessible.
 
-For the business owner who has not done that research, the positioning is simpler: we tell you what is actually broken. They tell you the problem is solved. We help you fix it. They cover it up.
+Our product does not use overlays. We tell the client what is actually broken. They tell you the problem is solved. We help you understand what to fix. They cover up the symptoms.
 
-The pitch is not technical. It is: "You paid for a smoke detector that beeps but doesn't call the fire department. We tell you where the fire is."
+The pitch is not technical. It is: "You paid for a smoke detector that beeps but does not call the fire department. We tell you where the fire is."
 
 ---
 
 ## The Free Scan Mechanic (Cold Outreach)
 
 **How it works:**
-1. Run an automated WCAG 2.1 AA scan on a prospect's domain (takes 2-5 minutes)
-2. Generate a one-page report showing: total violation count, risk score, three specific violations with plain-English descriptions
-3. Send the report as a PDF attachment in the cold email
-4. Email subject: "Your site has [N] ADA violations — free compliance report attached"
-5. Email body: The violations we found, what they could cost, how our monitoring prevents it, and a link to start a free 14-day trial
+1. Lead Engineer runs an automated WCAG 2.1 AA scan on the prospect's domain using a batch scanner (Pa11y, axe-core, or Lighthouse CLI)
+2. Scanner outputs a one-page HTML report: issue count by severity, three specific examples with plain-English descriptions
+3. Report is hosted at a URL and linked in the cold email (not attached as PDF — see Fix 4 in Issue #4)
+4. Email subject: "We found [N] accessibility issues on [domain] — free report"
+5. Email body: What we found, three specific examples, what the service does, link to the report
 
-**Why this works:**
-- The report is specific to their site, not generic
+**What makes this work:**
+- The report is about their actual site, not a generic pitch
 - It demonstrates the product before asking for money
-- The violations are real — they are not manufactured. Most sites have dozens to hundreds of genuine violations.
-- The fear trigger (lawsuit risk) is present, documented, and attached to their specific situation
-- No pitch call required. The report does the selling.
+- The issues are real — most sites have detectable WCAG failures
+- The call to action is simple: "Want us to monitor this monthly so you stay current?"
 
-**What is needed to run this at scale:**
-- An automated scanning tool (open source options: axe-core, Pa11y, Lighthouse accessibility audit)
-- A report generation template (PDF output)
-- An email sending system (cold email tool: Instantly, Apollo, Lemlist, or similar)
-- A prospect list from Apollo.io or Hunter.io
-
-All of this is operational infrastructure, not development. The validation test runs manually for the first 100 prospects.
-
----
-
-## What Happens After a Client Signs Up
-
-1. Client provides their URL(s)
-2. System runs initial full-site scan (automated)
-3. Initial audit report delivered within 24 hours
-4. Monthly recurring scans run automatically
-5. Monthly report sent via email
-6. Client accesses reports via simple web portal (future state — validation uses email delivery only)
-
-Ryan's time after client signup: approximately 5 minutes per new client to add them to the scanning queue. Less after automation is built.
+**What is needed before Day 1:**
+- Lead Engineer builds the batch scanner + HTML report generator (separate task, before Day 0)
+- Dedicated sending domain set up and warmed (see VALIDATION_PLAN.md)
+- Prospect list from Apollo.io
 
 ---
 
 ## Honest Assessment of This Offer
 
 **Strengths:**
-- Recurring revenue, no human fulfillment after scan automation is built
-- Real problem, documented legal risk, identifiable buyer
-- Price justified by risk reduction math, not competitive comparison
-- Free scan acquisition model is unusual in this market and easy to personalize
+- Recurring revenue, no human fulfillment after automation is built
+- Real problem, identifiable buyer, specific product
+- Free scan acquisition mechanic is unusual and personalizable
+- No-overlay positioning differentiates cleanly from the market leaders
 
 **Risks:**
-- Building the scanning and report generation infrastructure takes development time and money before the first dollar
-- Validation requires a working scan + report pipeline even for the test
-- If overlay companies improve their product or the legal environment shifts, differentiation weakens
-- The fix-it-yourself model requires client sophistication — some clients will expect us to fix the violations and be disappointed
+- Building the scanning and report generation infrastructure takes time before the first dollar
+- Some prospects will want us to fix the violations, not just report them — the scope limitation will disappoint them
+- Accessibility monitoring without legal compliance claims is a harder sell than fear-based marketing, but it is the accurate sell
 
-**Validation consideration:** The 7-day validation test does not require a fully built product. It requires a working free scan + real report to send to prospects, and a believable landing page or pitch. If 3+ people express genuine buying interest based on the free scan, the product is worth building.
+**Validation note:** The 7-day test does not require a fully built product. It requires a working batch scanner, a report for each prospect, a hosted report URL, and a plain-English email. If 3+ people ask about pricing, a call, or how to sign up, the offer is worth building.
