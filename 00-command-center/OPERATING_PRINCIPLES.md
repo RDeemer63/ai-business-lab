@@ -54,6 +54,12 @@ Agents do not have permanent jobs. Workflows require agents temporarily. The Chi
 
 Every six months, the Chief of Staff and Librarian conduct an audit: which agents were used, which weren't, what workflows ran, what institutional knowledge was captured. The goal is that Business #12 is launched faster and with fewer mistakes than Business #1 because the machine learned from each prior attempt.
 
+### 12. Do not answer tomorrow's portfolio question with today's experiment.
+
+Experiments validate value. Portfolio decisions — standalone product, Tulboxx feature, Throttled Up capability, or something else — happen after the value is confirmed. Building the wrong container before the market proves the value is premature. Run the experiment. Get the evidence. Then decide where it lives.
+
+*Source: Experiment 001 design. The Tulboxx integration question was deliberately deferred until after Gate 3. That discipline is now permanent.*
+
 ---
 
 ## Current Phase Rules (Phase 1)
