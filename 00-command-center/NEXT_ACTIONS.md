@@ -20,9 +20,9 @@ See: `04-experiments/EXPERIMENT_ZERO.md`
 
 | # | Decision | Owner | Status |
 |---|----------|-------|--------|
-| 1 | Approve VENTURE_STUDIO_MANIFESTO.md | Ryan | OPEN — required before Experiment Zero starts |
-| 2 | Approve the PR (`feature/import-agent-library`) and merge | Ryan | OPEN |
-| 3 | Confirm: start Experiment Zero against ADA Compliance Monitoring, or substitute a different idea? | Ryan | OPEN — defaults to ADA if no objection |
+| 1 | Approve VENTURE_STUDIO_MANIFESTO.md | Ryan | DONE — approved 2026-07-09 |
+| 2 | Approve the PR (`feature/import-agent-library`) and merge | Ryan | DONE — merged 2026-07-09 |
+| 3 | Approve VALIDATION_PLAN.md to advance Experiment Zero to Step 6 | Ryan | OPEN — plan at `04-experiments/experiment-zero/VALIDATION_PLAN.md` |
 
 ---
 
@@ -293,3 +293,31 @@ Max possible: 60
 **Stop condition (if any):** None — full scope completed.
 
 **Needs Ryan:** None. Next action is still: approve manifesto, merge PR #1, say "Start Experiment Zero."
+
+---
+
+### 2026-07-09 — Lead Engineer (Experiment Zero: Steps 2-4)
+
+**Claimed:** Run Experiment Zero Steps 2-4 for ADA Compliance Monitoring. Produce validation plan for Ryan's Step 5 approval.
+
+**Definition of Done:** MARKET_RESEARCH.md, COMPETITOR_ANALYSIS.md, OFFER_DESIGN.md, and VALIDATION_PLAN.md all exist in `04-experiments/experiment-zero/` with specific, evidence-based content. RYAN_TIME_LOG.md template created. EXPERIMENT_ZERO.md status updated.
+
+**What I did:** Wrote MARKET_RESEARCH.md with ADA lawsuit data (4,600+ federal suits in 2023, Seyfarth Shaw), buyer profile (5-50 employee businesses in restaurant/retail/healthcare/legal), and pain evidence (Robles v. Domino's, Winn-Dixie, serial plaintiff mechanics, $25,000-$50,000 average settlement). Wrote COMPETITOR_ANALYSIS.md covering 7 competitors with real pricing: accessiBe ($490/yr overlay), AudioEye ($49/mo overlay), UserWay ($49/mo overlay), Pope Tech ($20-150/mo monitoring), Deque axe Monitor ($279/mo), Siteimprove ($250+/mo), BoIA ($300-1,000/mo). Identified the positioning gap: monitoring-only at $99/month with plain-language reports does not exist in this market. Wrote OFFER_DESIGN.md with offer name (ClearPath ADA Monitor), two tiers ($99/mo Solo, $179/mo Multi), plain-language report differentiator, and free-scan acquisition mechanic. Wrote VALIDATION_PLAN.md targeting owners/managers at 5-50 employee businesses in high-lawsuit industries via 100 cold emails with personalized free scan reports over 7 days. Success = 3+ genuine interest replies.
+
+**What I did NOT do and why:** Did not build any scanning infrastructure, email system, or landing page. The validation plan calls for manual execution first — building before validation signal is the failure mode the studio exists to prevent. Did not select specific prospects or write the email — that is Step 6, which requires Ryan's approval of this plan first.
+
+**Files touched:**
+- `04-experiments/experiment-zero/MARKET_RESEARCH.md` (created)
+- `04-experiments/experiment-zero/COMPETITOR_ANALYSIS.md` (created)
+- `04-experiments/experiment-zero/OFFER_DESIGN.md` (created)
+- `04-experiments/experiment-zero/VALIDATION_PLAN.md` (created — pending Ryan approval)
+- `04-experiments/experiment-zero/RYAN_TIME_LOG.md` (created — template for Ryan to fill in)
+- `04-experiments/EXPERIMENT_ZERO.md` (updated — status changed to IN PROGRESS)
+- `00-command-center/NEXT_ACTIONS.md` (updated — Open Decisions table updated, this entry added)
+
+**Stop condition (if any):** None encountered. The market research is substantive. The offer is differentiated. The validation plan is specific. Ready for Ryan's review.
+
+**Needs Ryan:**
+- [ ] Read `04-experiments/experiment-zero/VALIDATION_PLAN.md` and approve or amend — this is Step 5. Approval authorizes Step 6 (outreach message design).
+- [ ] Log your time for Step 1 (idea selection) in `04-experiments/experiment-zero/RYAN_TIME_LOG.md`
+- [ ] One pre-test action before Step 6: run one sample scan on any business website using the free axe DevTools Chrome extension or Google Lighthouse, screenshot the results, and confirm the format is usable as a report. This takes 10 minutes and confirms the mechanic works before we design the email around it.
