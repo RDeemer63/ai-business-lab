@@ -12,11 +12,19 @@
 
 ## Scoring Note
 
-Track A used 10 criteria including founder advantage (C8), which inflates scores for ideas where Ryan's existing assets are the primary differentiator. Track B excluded founder advantage entirely. To compare across tracks, this document uses three normalized metrics:
+Track A used 10 criteria including founder advantage (C8), which inflates scores for ideas where Ryan's existing assets are the primary differentiator. Track B excluded founder advantage entirely. To compare across tracks, this document uses six normalized metrics:
 
+**Original metrics:**
 - **Business quality (1-5):** How strong is this business model if stripped of who is building it?
 - **Ryan fit (1-5):** How much does Ryan's existing position accelerate this specific idea?
 - **Job risk (1-5):** How likely is this business to require 20+ hours/week from Ryan after 12 months? (5 = very unlikely to become a job; 1 = this is a job)
+
+**Venture Studio metrics (added 2026-07-10, per Chief Architect recommendation):**
+- **Strategic leverage (1-5):** Does success here make the studio stronger — improving other ventures, building platform capabilities, or expanding distribution? (5 = platform capability; 1 = standalone only)
+- **Reusable capability (1-5):** Will this experiment produce workflows, agents, or technology useful in future experiments? (5 = high reuse; 1 = one-off)
+- **Portfolio synergy (1-5):** Does this strengthen existing Ryan ventures (Tulboxx, Throttled Up, Outta the Weeds) or stand entirely alone? (5 = direct synergy; 1 = no connection)
+
+These three metrics answer a different question than revenue potential. They measure what the Venture Studio learns and retains — independent of whether the business succeeds.
 
 ---
 
@@ -52,18 +60,20 @@ Track A used 10 criteria including founder advantage (C8), which inflates scores
 
 ## Cross-Track Summary Table
 
-| Rank | Track | Idea | Business Quality | Ryan Fit | Job Risk | Validation Order |
-|------|-------|------|-----------------|----------|----------|-----------------|
-| 1 | B | Job Desc Bias Checker | 4.5 | 2 | 5 | 4th |
-| 2 | B | ADA Compliance Monitor | 4.5 | 3 | 5 | 2nd |
-| 3 | B | Privacy Policy Monitor | 4.5 | 3 | 5 | 2nd (bundle) |
-| 4 | A | AI Lead Follow-Up Service | 4.0 | 4 | 3 | 2nd (parallel) |
-| 5 | B | Contract Redline Summarizer | 4.0 | 3 | 4 | 3rd |
-| 6 | B | SOC 2 Template Pack | 4.0 | 2 | 5 | 5th |
-| 7 | A | AI Content Subscription | 3.5 | 5 | 3 | 1st |
-| 8 | A | AI Competitive Intel Reports | 3.5 | 4 | 4 | 3rd |
-| 9 | A | AI Local SEO Subscription | 3.5 | 5 | 2 | 2nd |
-| 10 | A | AI YouTube Script System | 3.0 | 3 | 4 | 4th |
+| Rank | Track | Idea | Business Quality | Ryan Fit | Job Risk | Strategic Leverage | Reusable Capability | Portfolio Synergy |
+|------|-------|------|-----------------|----------|----------|--------------------|--------------------|--------------------|
+| 1 | A | AI Lead Follow-Up Service | 4.0 | 4 | 3 | 5 | 5 | 5 |
+| 2 | A | AI Content Subscription | 3.5 | 5 | 3 | 3 | 4 | 4 |
+| 3 | B | Job Desc Bias Checker | 4.5 | 2 | 5 | 1 | 2 | 1 |
+| 4 | B | Privacy Policy Monitor | 4.5 | 3 | 5 | 2 | 3 | 2 |
+| 5 | B | Contract Redline Summarizer | 4.0 | 3 | 4 | 2 | 3 | 2 |
+| 6 | B | ADA Compliance Monitor | 4.5 | 3 | 5 | 1 | 2 | 1 |
+| 7 | B | SOC 2 Template Pack | 4.0 | 2 | 5 | 1 | 2 | 1 |
+| 8 | A | AI Competitive Intel Reports | 3.5 | 4 | 4 | 3 | 3 | 3 |
+| 9 | A | AI Local SEO Subscription | 3.5 | 5 | 2 | 3 | 3 | 4 |
+| 10 | A | AI YouTube Script System | 3.0 | 3 | 4 | 2 | 3 | 2 |
+
+**Why the ranking changed:** Adding Strategic Leverage, Reusable Capability, and Portfolio Synergy moves AI Lead Follow-Up to the top. It scores maximum on all three Venture Studio metrics: the automation capability is useful inside Tulboxx and Throttled Up regardless of whether the standalone business succeeds, the GHL workflow is reusable across future experiments, and it directly strengthens existing client relationships. Track B ideas remain strong on business fundamentals but score low on Venture Studio metrics — they stand alone.
 
 ---
 
