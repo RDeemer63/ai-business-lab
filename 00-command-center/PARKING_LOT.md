@@ -58,6 +58,14 @@ Each entry follows this structure:
 - Evidence needed: two or more simultaneous active ventures where resource conflict is documented — or four completed experiments showing a natural split between ideas that validated quickly and ideas that required sustained build effort
 - Parked: 2026-07-10
 
+### Claude-Powered GHL AI Layer (Webhook Architecture)
+- Proposes: a lightweight webhook server that intercepts GHL inbound SMS, calls Claude API with contractor-specific context, and posts the AI reply back via GHL conversations API — replacing GHL's native Conversations AI with a Claude-powered equivalent
+- Problem claimed: GHL's Conversations AI is UI-only (no API config), limiting our ability to set up and customize AI responses programmatically per contractor client
+- Evidence needed: Gate 3 passes and at least one paying contractor client — at that point setup speed matters and the value of API-driven configuration is real
+- Why it's better than GHL native: Claude outperforms GHL's LLM, prompts are fully customizable per client, the intelligence layer is owned by us not GHL, and new clients require only a new prompt not a new UI build
+- Build estimate: ~100-line Node.js server, deploy free on Railway/Render, one GHL workflow built once in UI. Ryan has Vercel available.
+- Parked: 2026-07-10
+
 ### Principle Registry (08-governance/PRINCIPLE_REGISTRY.md)
 - Proposes: a registry where every operating principle records: principle text, status, origin experiment, origin decision, evidence link, supersedes, superseded by, last exercised date
 - Problem claimed: principles lose their lineage as the organization grows; future agents cannot distinguish principles earned from evidence from principles adopted aspirationally
