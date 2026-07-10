@@ -1,6 +1,6 @@
 # Experiment Zero — The Venture Studio Test
 
-**Status:** IN PROGRESS — Step 6 complete, pending Ryan approval of outreach draft
+**Status:** COMPLETE — Assumption 3 validated (planning phase). Business not pursued.
 **Type:** Meta-experiment (tests the organization, not a market)
 **Date defined:** 2026-07-09
 
@@ -51,11 +51,11 @@ Ryan touches Steps 1, 5, 6, and 8. Target: under 30 minutes per touchpoint, unde
 
 | Metric | Target | Actual (fill in after) |
 |--------|--------|----------------------|
-| Steps completed without Ryan | 6 of 8 | |
-| Ryan's total time for the cycle | Under 2 hours | |
-| Time from idea selection to recommendation | Under 7 days | |
-| Steps with documented output files | 8 of 8 | |
-| Knowledge base entries created | At least 3 | |
+| Steps completed without Ryan | 6 of 8 | Steps 2-4 ran without Ryan. Steps 1, 5, 6 required Ryan input. Steps 7-8 not reached. |
+| Ryan's total time for the cycle | Under 2 hours | Not measured — execution phase not run. Planning cycle estimated at 1h45m after v3 workflow redesign. |
+| Time from idea selection to recommendation | Under 7 days | Planning cycle: 1 day. Execution not run. |
+| Steps with documented output files | 8 of 8 | 6 of 8 steps have output files. Steps 7-8 not reached. |
+| Knowledge base entries created | At least 3 | 3 lesson files: STAGE_GATE_LESSONS.md, POST_MORTEM.md, RETROSPECTIVE.md |
 
 ---
 
@@ -119,6 +119,28 @@ Post-experiment:
 
 ---
 
-## To Start This Experiment
+## Experiment Scorecard
 
-Ryan types: "Start Experiment Zero." The Chief of Staff routes Step 1 to Business Strategist for scoping, then Step 2 begins immediately. Ryan's first touchpoint is Step 5 (validation plan review).
+| Metric | Value |
+|--------|-------|
+| Experiment number | 000 |
+| Outcome | Assumption 3 validated (planning phase). Business not pursued. |
+| Planning cycle duration | 1 day |
+| Documents produced | 12 |
+| Review cycles | 3 (v1 → v2 → v3 validation plan) |
+| Stage Gate blocks | 1 (KPI shift caught and resolved) |
+| Workflow improvements | 2 (agent-prepared drafts; full funnel tracking) |
+| Lessons filed | 3 (STAGE_GATE_LESSONS.md, POST_MORTEM.md, RETROSPECTIVE.md) |
+| Architectural changes | 0 (Architecture Freeze held) |
+| Businesses validated | 0 |
+| Assumption 3 validated | Probably — with evidence from the planning phase |
+| Organization improved | YES |
+
+---
+
+## Post-Experiment Record
+
+Full record in `09-lessons/experiment-zero/`:
+- POST_MORTEM.md — what happened, what the review caught, what changed
+- RETROSPECTIVE.md — seven questions, honest answers
+- STAGE_GATE_LESSONS.md — KPI defense rule, first organizational lesson

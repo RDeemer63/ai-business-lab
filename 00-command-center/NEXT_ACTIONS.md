@@ -8,11 +8,11 @@
 
 ## This Week's Priority
 
-Approve the Venture Studio Manifesto and run Experiment Zero.
+Experiment Zero is complete. The studio's planning cycle is validated.
 
-Research is complete. Two idea tracks are documented. The studio architecture is built. The next step is not choosing a business — it is testing whether the studio can run a validation cycle without Ryan becoming the bottleneck.
+Next: Select the first real business idea to validate. The pipeline is in `01-business-ideas/COMBINED_COMPARISON.md`. The studio's investment criteria are in `00-command-center/FOUNDER/INVESTMENT_CRITERIA.md`.
 
-See: `04-experiments/EXPERIMENT_ZERO.md`
+Ryan selects the idea. The studio runs the cycle.
 
 ---
 
@@ -20,9 +20,9 @@ See: `04-experiments/EXPERIMENT_ZERO.md`
 
 | # | Decision | Owner | Status |
 |---|----------|-------|--------|
-| 1 | Approve VENTURE_STUDIO_MANIFESTO.md | Ryan | DONE — approved 2026-07-09 |
-| 2 | Approve the PR (`feature/import-agent-library`) and merge | Ryan | DONE — merged 2026-07-09 |
-| 3 | Approve VALIDATION_PLAN.md to advance Experiment Zero to Step 6 | Ryan | OPEN — plan at `04-experiments/experiment-zero/VALIDATION_PLAN.md` |
+| 1 | Approve VENTURE_STUDIO_MANIFESTO.md | Ryan | CLOSED — approved 2026-07-09 |
+| 2 | Approve the PR (`feature/import-agent-library`) and merge | Ryan | CLOSED — merged 2026-07-09 |
+| 3 | Experiment Zero | Ryan | CLOSED — complete 2026-07-09. Next: select Experiment 001 idea. |
 
 ---
 
@@ -363,14 +363,35 @@ Max possible: 60
 
 **What I did:** Wrote three subject line variants (A: free report for [DOMAIN] — recommended; B: we scanned [BUSINESS_NAME]; C: [ISSUE_COUNT] issues found). Wrote the primary email leading with three specific plain-English issue examples from the prospect's real site, one report link CTA, one soft reply CTA. Wrote one follow-up for non-responders with a new angle (issues don't fix themselves) rather than a "just checking in." Wrote plain-English translation examples for converting scanner output to business-owner language. Wrote pre-send checklist. All in plain text, no HTML, no legal claims in the email body.
 
-**What I did NOT do and why:** Did not write a fear-based version — the validation plan explicitly tests the factual hook as Hypothesis A. Did not include the legal disclaimer in the email body — it lives on the report page. Did not write more than one follow-up — the validation plan specifies one follow-up sequence. Did not write HTML email — plain text is correct for deliverability on a new sending domain.
+**What I did NOT do and why:** Did not write a fear-based version — the validation plan explicitly tests the factual hook as Hypothesis A. Did not include the legal disclaimer in the email body — it lives on the report page. Did not write more than one follow-up — the validation plan specifies one follow-up sequence.
 
 **Files touched:**
 - `04-experiments/experiment-zero/OUTREACH_DRAFT.md` (created)
-- `04-experiments/EXPERIMENT_ZERO.md` (updated — status to Step 6 complete)
+- `04-experiments/EXPERIMENT_ZERO.md` (updated)
 - `00-command-center/NEXT_ACTIONS.md` (this entry)
 
 **Stop condition (if any):** None — full scope completed.
 
-**Needs Ryan:**
-- [ ] Review and approve `04-experiments/experiment-zero/OUTREACH_DRAFT.md` — this is the final gate before execution begins. Once approved, pre-test setup starts: dedicated sending domain, batch scanner build, domain warm period, prospect list pull from Apollo.
+**Needs Ryan:** Experiment Zero closed before execution. No approval needed.
+
+---
+
+### 2026-07-09 — Lead Engineer (Experiment Zero Close-Out)
+
+**Claimed:** Close out Experiment Zero — post-mortem, retrospective, scorecard, status updates, merge Step 6 branch.
+
+**Definition of Done:** POST_MORTEM.md and RETROSPECTIVE.md exist in 09-lessons/experiment-zero/. EXPERIMENT_ZERO.md status COMPLETE with filled KPIs and scorecard. Issue #4 closed. NEXT_ACTIONS.md updated. All experiment branches merged to main.
+
+**What I did:** Closed Issue #4. Wrote POST_MORTEM.md and RETROSPECTIVE.md. Updated EXPERIMENT_ZERO.md to COMPLETE with KPI actuals and experiment scorecard. Updated NEXT_ACTIONS.md priority section and closed all three open decisions. Merged Step 6 outreach branch for complete record.
+
+**What I did NOT do and why:** Did not select the next business idea — that decision belongs to Ryan. Did not write Experiment 001 setup — premature without idea selection. Did not build the batch scanner — stays in parking lot until a scan-based experiment is selected.
+
+**Files touched:**
+- `09-lessons/experiment-zero/POST_MORTEM.md` (created)
+- `09-lessons/experiment-zero/RETROSPECTIVE.md` (created)
+- `04-experiments/EXPERIMENT_ZERO.md` (updated — COMPLETE, KPIs filled, scorecard added)
+- `00-command-center/NEXT_ACTIONS.md` (updated — priority, decisions, this entry)
+
+**Stop condition (if any):** None — full scope completed.
+
+**Needs Ryan:** Select the next idea from `01-business-ideas/COMBINED_COMPARISON.md` to begin Experiment 001.
