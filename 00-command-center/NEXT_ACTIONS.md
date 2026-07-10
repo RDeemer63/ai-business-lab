@@ -252,3 +252,23 @@ Max possible: 60
 **Files touched:** All 25 files listed above.
 
 **Needs Ryan:** Approve manifesto. Merge PR #1. Say "Start Experiment Zero."
+
+---
+
+### 2026-07-09 — Lead Engineer (Receipt + Definition of Done patterns)
+
+**Claimed:** Apply Open Engine implementation patterns (receipts, definition of done, stop conditions) to the workflow template and trail format — without changing the frozen architecture.
+
+**Definition of Done:** AGENTS.md trail format and VALIDATE_BUSINESS_IDEA.md both updated with the three patterns. Committed and pushed.
+
+**What I did:** Updated AGENTS.md trail format to require a "What I did NOT do and why" receipt field and explicit "Stop condition" field. Updated all five steps of VALIDATE_BUSINESS_IDEA.md with explicit Definition of Done and Stop Condition for each step.
+
+**What I did NOT do and why:** Did not create a ticket queue or claim-lock system. No evidence of concurrent agent collision yet — that pattern waits for Parking Lot review. Did not write ADR-0003. The principle (work moves through state, not conversations) is already covered by ADR-0001; a new ADR needs a concrete decision gap to encode, not a restatement.
+
+**Files touched:**
+- `AGENTS.md`
+- `03-workflows/VALIDATE_BUSINESS_IDEA.md`
+
+**Stop condition (if any):** None — full scope completed.
+
+**Needs Ryan:** None. Next action is still: approve manifesto, merge PR #1, say "Start Experiment Zero."

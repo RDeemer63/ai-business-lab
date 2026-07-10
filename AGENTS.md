@@ -63,17 +63,21 @@ Three agents are permanently active. All others are dormant until a workflow req
 
 ## Trail format
 
-Every agent session must leave a note in `00-command-center/NEXT_ACTIONS.md`:
+Every agent session must leave a note in `00-command-center/NEXT_ACTIONS.md`. This is a receipt, not just a log. It must include what was NOT done and why — so the next agent or human picking up the work knows exactly where to resume.
 
 ```
 ### [Date] — [Agent Name]
 
+**Claimed:** [What task was taken on at the start of this session]
+**Definition of Done:** [What completion looked like before starting — agreed up front]
 **What I did:**
-**What changed:**
-**What I recommend next:**
+**What I did NOT do and why:** [Explicit. If nothing was skipped, say so.]
 **Files touched:**
+**Stop condition (if any):** [What blocked completion or required human input — empty if none]
 **Needs Ryan:**
 ```
+
+The **What I did NOT do and why** field is required even when nothing was skipped. Write "Nothing skipped — full scope completed." Agents that omit this field are leaving incomplete receipts.
 
 ---
 
