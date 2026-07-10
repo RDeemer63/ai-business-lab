@@ -84,7 +84,9 @@ This experiment runs as three sequential gates. Each gate answers exactly one qu
 **Ryan required:** Yes — final credibility review before Gate 2
 **Ryan time:** 30 minutes
 
-**Confidence after Gate 1 (fill in):** _____%
+**Confidence after Gate 1:** 75%
+**Why it changed:** Demo built and passed Ryan's credibility test. GHL API investigation revealed native Conversations AI is UI-only — but this invalidated a technical assumption, not the hypothesis. Claude webhook architecture identified as a better implementation path. Confidence gap (25%) = uncertainty about whether contractors will respond to the demo the way Ryan did.
+**Evidence:** `04-experiments/experiment-001/GATE_1_RESULT.md`
 
 ---
 
