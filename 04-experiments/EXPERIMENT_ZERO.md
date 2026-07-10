@@ -1,6 +1,6 @@
 # Experiment Zero — The Venture Studio Test
 
-**Status:** DEFINED — not yet started
+**Status:** IN PROGRESS — Steps 2-4 complete, validation plan pending Ryan approval (Step 5)
 **Type:** Meta-experiment (tests the organization, not a market)
 **Date defined:** 2026-07-09
 
