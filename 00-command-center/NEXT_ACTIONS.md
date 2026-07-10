@@ -26,25 +26,20 @@ Ryan selects the idea. The studio runs the cycle.
 
 ---
 
-## Three Assumption Tests (replacing "validate 3 businesses")
+## Assumption Tests
 
-We are not validating businesses. We are testing three assumptions.
+**Assumption 3 — COMPLETE (Experiment Zero):** "The studio can run a full validation cycle with under 2 hours of Ryan's time."
+- Result: Validated (planning phase). Execution phase not run. Business not pursued.
+- Record: `04-experiments/EXPERIMENT_ZERO.md`, `09-lessons/experiment-zero/`
 
-**Assumption 1:** "Businesses with an urgent legal fear will buy a self-serve monitoring product without a sales call."
-- Test vehicle: ADA Compliance Monitoring (Track B)
-- Method: 20 cold emails with free scan results attached
-- Signal: 3+ genuine replies expressing interest
-- Also serves as Experiment Zero — the meta-test of the studio itself
+**Assumption 1 — PENDING:** "Businesses with an urgent legal fear will buy a self-serve monitoring product without a sales call."
+- Original test vehicle: ADA Compliance Monitoring — retired (Experiment Zero used this idea to test the process, not the market)
+- New test vehicle: TBD — select as part of Experiment 001 or 002 decision
 
-**Assumption 2:** "Contractors will pay for AI to respond to leads they're already losing."
+**Assumption 2 — PENDING:** "Contractors will pay for AI to respond to leads they're already losing."
 - Test vehicle: AI Lead Follow-Up Service (Track A)
 - Method: Walk 3 contractors through a live GHL demo, ask for verbal commitment
 - Signal: At least 1 asks "how do I sign up?" before the demo ends
-
-**Assumption 3 (Experiment Zero):** "The studio can run a full validation cycle with under 2 hours of Ryan's time."
-- Test vehicle: The studio's own process, run against Assumption 1
-- KPI: Process quality, not market response
-- See `04-experiments/EXPERIMENT_ZERO.md` for full definition
 
 ---
 
@@ -52,19 +47,15 @@ We are not validating businesses. We are testing three assumptions.
 
 | Agent | Task | Status |
 |-------|------|--------|
-| Chief of Staff | Route Experiment Zero steps after Ryan approves Manifesto | WAITING ON RYAN |
-| Business Strategist | Run Steps 1 and 3 of Experiment Zero (scoping + competitor analysis) | QUEUED — starts when Manifesto approved |
-| Trend Researcher | Run Step 2 of Experiment Zero (market research — ADA monitoring) | QUEUED — activate for this workflow only |
-| Newsletter Editor | Draft Issue 001 — "We Are Building an Autonomous Venture Studio" | QUEUED |
+| Chief of Staff | Route Experiment 001 after Ryan selects idea | WAITING ON RYAN |
+| Newsletter Editor | Draft Issue 001 — "We Are Building an Autonomous Venture Studio" | QUEUED — activate when Experiment 001 launches |
 | Historian | Write decision record for venture studio reframe | QUEUED |
 
 ---
 
 ## Needs Ryan
 
-- [ ] Read `00-command-center/VENTURE_STUDIO_MANIFESTO.md` — approve or amend before it becomes the constitutional document
-- [ ] Merge PR #1 (`feature/import-agent-library`)
-- [ ] Say "Start Experiment Zero" to begin the first validation cycle
+- [ ] Select Experiment 001 idea from `01-business-ideas/COMBINED_COMPARISON.md`
 
 ---
 
