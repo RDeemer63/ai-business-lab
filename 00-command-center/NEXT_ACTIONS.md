@@ -352,3 +352,25 @@ Max possible: 60
 **Needs Ryan:**
 - [ ] Review VALIDATION_PLAN.md v2 on branch `agent/experiment-zero` and approve or request further changes (Step 5 gate)
 - [ ] Confirm Issue #4 is resolved or note remaining concerns
+
+---
+
+### 2026-07-09 — Outbound Strategist (Experiment Zero: Step 6)
+
+**Claimed:** Write the cold email, subject line variants, and follow-up sequence for Experiment Zero.
+
+**Definition of Done:** OUTREACH_DRAFT.md exists with three subject line variants, the primary cold email (under 150 words), one follow-up (under 80 words), a merge field reference table, and sending notes including subject line recommendation, send time, and plain-text rationale.
+
+**What I did:** Wrote three subject line variants (A: free report for [DOMAIN] — recommended; B: we scanned [BUSINESS_NAME]; C: [ISSUE_COUNT] issues found). Wrote the primary email leading with three specific plain-English issue examples from the prospect's real site, one report link CTA, one soft reply CTA. Wrote one follow-up for non-responders with a new angle (issues don't fix themselves) rather than a "just checking in." Wrote plain-English translation examples for converting scanner output to business-owner language. Wrote pre-send checklist. All in plain text, no HTML, no legal claims in the email body.
+
+**What I did NOT do and why:** Did not write a fear-based version — the validation plan explicitly tests the factual hook as Hypothesis A. Did not include the legal disclaimer in the email body — it lives on the report page. Did not write more than one follow-up — the validation plan specifies one follow-up sequence. Did not write HTML email — plain text is correct for deliverability on a new sending domain.
+
+**Files touched:**
+- `04-experiments/experiment-zero/OUTREACH_DRAFT.md` (created)
+- `04-experiments/EXPERIMENT_ZERO.md` (updated — status to Step 6 complete)
+- `00-command-center/NEXT_ACTIONS.md` (this entry)
+
+**Stop condition (if any):** None — full scope completed.
+
+**Needs Ryan:**
+- [ ] Review and approve `04-experiments/experiment-zero/OUTREACH_DRAFT.md` — this is the final gate before execution begins. Once approved, pre-test setup starts: dedicated sending domain, batch scanner build, domain warm period, prospect list pull from Apollo.
