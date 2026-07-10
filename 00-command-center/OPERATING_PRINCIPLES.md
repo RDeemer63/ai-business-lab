@@ -1,10 +1,24 @@
 # Operating Principles
 
-**Version:** 1.0
-**Date:** 2026-07-09
+**Version:** 1.1
+**Date:** 2026-07-10
 **Status:** Active
 
 These principles govern how AI Business Lab operates. They exist to prevent drift, duplication, and the gradual accumulation of complexity that kills small systems. Every agent, every workflow, and every decision should be consistent with these principles.
+
+---
+
+## Constitutional Rule: How Principles Are Added
+
+**No operating principle may be added unless it can be traced to a specific experiment, decision, or post-mortem.**
+
+Every principle must cite its origin — the experiment that produced the evidence, the decision that exposed the gap, or the post-mortem that documented the failure. Principles derived from inspiration or good intentions alone are not admitted. This document accumulates principles the same way science accumulates theories: from repeated observation, not from philosophy.
+
+When adding a new principle, include:
+- The principle itself
+- The source (experiment number, decision ID, or post-mortem reference)
+
+*This rule was itself sourced from the evidence of Principle 12 — the first principle this organization earned rather than invented.*
 
 ---
 

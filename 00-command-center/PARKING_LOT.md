@@ -58,6 +58,12 @@ Each entry follows this structure:
 - Evidence needed: two or more simultaneous active ventures where resource conflict is documented — or four completed experiments showing a natural split between ideas that validated quickly and ideas that required sustained build effort
 - Parked: 2026-07-10
 
+### Principle Registry (08-governance/PRINCIPLE_REGISTRY.md)
+- Proposes: a registry where every operating principle records: principle text, status, origin experiment, origin decision, evidence link, supersedes, superseded by, last exercised date
+- Problem claimed: principles lose their lineage as the organization grows; future agents cannot distinguish principles earned from evidence from principles adopted aspirationally
+- Evidence needed: 10 or more principles in the operating system, with at least 2 documented instances where knowing a principle's origin would have changed a decision or prevented a mistake
+- Parked: 2026-07-10
+
 ---
 
 ## Graduated Entries
