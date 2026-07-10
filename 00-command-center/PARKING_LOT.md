@@ -52,6 +52,14 @@ Each entry follows this structure:
 
 ---
 
+### Two-Speed Studio (Research Track / Build Track)
+- Proposes: formally separating experiments into a fast Research Track (many ideas, rapid validation) and a slow Build Track (few ideas, high quality execution)
+- Problem claimed: without separation, the studio risks spreading resources across too many simultaneous builds
+- Evidence needed: two or more simultaneous active ventures where resource conflict is documented — or four completed experiments showing a natural split between ideas that validated quickly and ideas that required sustained build effort
+- Parked: 2026-07-10
+
+---
+
 ## Graduated Entries
 
 _(none yet -- entries move here when they earn their way into the architecture)_
