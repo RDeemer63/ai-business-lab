@@ -355,20 +355,41 @@ Max possible: 60
 
 ---
 
+### 2026-07-09 — Outbound Strategist (Experiment Zero: Step 6)
+
+**Claimed:** Write the cold email, subject line variants, and follow-up sequence for Experiment Zero.
+
+**Definition of Done:** OUTREACH_DRAFT.md exists with three subject line variants, the primary cold email (under 150 words), one follow-up (under 80 words), a merge field reference table, and sending notes including subject line recommendation, send time, and plain-text rationale.
+
+**What I did:** Wrote three subject line variants (A: free report for [DOMAIN] — recommended; B: we scanned [BUSINESS_NAME]; C: [ISSUE_COUNT] issues found). Wrote the primary email leading with three specific plain-English issue examples from the prospect's real site, one report link CTA, one soft reply CTA. Wrote one follow-up for non-responders with a new angle (issues don't fix themselves) rather than a "just checking in." Wrote plain-English translation examples for converting scanner output to business-owner language. Wrote pre-send checklist. All in plain text, no HTML, no legal claims in the email body.
+
+**What I did NOT do and why:** Did not write a fear-based version — the validation plan explicitly tests the factual hook as Hypothesis A. Did not include the legal disclaimer in the email body — it lives on the report page. Did not write more than one follow-up — the validation plan specifies one follow-up sequence.
+
+**Files touched:**
+- `04-experiments/experiment-zero/OUTREACH_DRAFT.md` (created)
+- `04-experiments/EXPERIMENT_ZERO.md` (updated)
+- `00-command-center/NEXT_ACTIONS.md` (this entry)
+
+**Stop condition (if any):** None — full scope completed.
+
+**Needs Ryan:** Experiment Zero closed before execution. No approval needed.
+
+---
+
 ### 2026-07-09 — Lead Engineer (Experiment Zero Close-Out)
 
 **Claimed:** Close out Experiment Zero — post-mortem, retrospective, scorecard, status updates, merge Step 6 branch.
 
-**Definition of Done:** POST_MORTEM.md and RETROSPECTIVE.md exist in 09-lessons/experiment-zero/. EXPERIMENT_ZERO.md status updated to COMPLETE with filled KPIs and scorecard. Issue #4 closed. NEXT_ACTIONS.md updated. All experiment branches merged to main.
+**Definition of Done:** POST_MORTEM.md and RETROSPECTIVE.md exist in 09-lessons/experiment-zero/. EXPERIMENT_ZERO.md status COMPLETE with filled KPIs and scorecard. Issue #4 closed. NEXT_ACTIONS.md updated. All experiment branches merged to main.
 
-**What I did:** Closed Issue #4. Wrote POST_MORTEM.md (permanent record of what happened, what the review caught, what changed). Wrote RETROSPECTIVE.md (seven honest questions answered from the artifacts). Updated EXPERIMENT_ZERO.md status to COMPLETE, filled in KPI actuals, added experiment scorecard. Updated NEXT_ACTIONS.md priority and closed all three open decisions. Merged Step 6 outreach branch for complete record.
+**What I did:** Closed Issue #4. Wrote POST_MORTEM.md and RETROSPECTIVE.md. Updated EXPERIMENT_ZERO.md to COMPLETE with KPI actuals and experiment scorecard. Updated NEXT_ACTIONS.md priority section and closed all three open decisions. Merged Step 6 outreach branch for complete record.
 
-**What I did NOT do and why:** Did not select the next business idea — that decision belongs to Ryan. Did not write Experiment 001 setup — premature without idea selection. Did not build the batch scanner — still in parking lot until a scan-based experiment is actually selected.
+**What I did NOT do and why:** Did not select the next business idea — that decision belongs to Ryan. Did not write Experiment 001 setup — premature without idea selection. Did not build the batch scanner — stays in parking lot until a scan-based experiment is selected.
 
 **Files touched:**
 - `09-lessons/experiment-zero/POST_MORTEM.md` (created)
 - `09-lessons/experiment-zero/RETROSPECTIVE.md` (created)
-- `04-experiments/EXPERIMENT_ZERO.md` (updated — status COMPLETE, KPIs filled, scorecard added)
+- `04-experiments/EXPERIMENT_ZERO.md` (updated — COMPLETE, KPIs filled, scorecard added)
 - `00-command-center/NEXT_ACTIONS.md` (updated — priority, decisions, this entry)
 
 **Stop condition (if any):** None — full scope completed.
