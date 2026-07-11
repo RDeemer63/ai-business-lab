@@ -101,9 +101,13 @@ Ryan only touches the **Needs Ryan** section. Everything else runs without him.
 
 ---
 
-## Off-limits for idea research
+## Idea Space rules
 
-`01-business-ideas/IDEA_SPACE.md` is a raw capture doc — not a pipeline input. Agents tasked with finding, scoring, or researching business ideas must NOT read from or reference it. It is Ryan's scratchpad, not a source of record.
+`01-business-ideas/IDEA_SPACE.md` is the studio's permanent idea archive.
+
+- Agents tasked with finding, scoring, or researching ideas must NOT read it as a source or input
+- Agents that surface any new idea during research MUST add it to IDEA_SPACE.md — even if it seems weak or off-topic
+- Nothing gets removed from IDEA_SPACE.md — it is an append-only archive
 
 ---
 

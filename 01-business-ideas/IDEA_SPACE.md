@@ -1,8 +1,14 @@
 # Idea Space
 
-Raw capture only. Not for agent review or scoring. Not part of any evaluation pipeline.
+Permanent archive of every idea that surfaces in this studio — from Ryan, from agents, from research, from anywhere.
 
-When Ryan or an agent adds an idea here, it stays here until Ryan explicitly moves it to the pipeline.
+Nothing gets deleted. A mediocre idea today might be the missing piece of a great idea tomorrow. Capture everything.
+
+**Rules:**
+- Agents may NOT read this file as a research or scoring input
+- Agents MUST add any idea they surface during research to this file before or after evaluation
+- Ryan or agents can add ideas at any time without triggering a review
+- Ideas stay here until Ryan explicitly moves one into the pipeline
 
 ---
 
