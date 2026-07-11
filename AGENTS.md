@@ -101,6 +101,12 @@ Ryan only touches the **Needs Ryan** section. Everything else runs without him.
 
 ---
 
+## Off-limits for idea research
+
+`01-business-ideas/IDEA_SPACE.md` is a raw capture doc — not a pipeline input. Agents tasked with finding, scoring, or researching business ideas must NOT read from or reference it. It is Ryan's scratchpad, not a source of record.
+
+---
+
 ## Tools agents may use
 
 - Read/write files in this repo
